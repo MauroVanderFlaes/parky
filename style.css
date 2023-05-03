@@ -1,0 +1,32 @@
+#map { 
+    height: 90vh;
+}
+
+#logo {
+    background-image: url("/img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    z-index: 1000;
+  }
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.nav a {
+    margin: 0 20px;
+}
+
+.nav img {
+    width: 50px;
+}
