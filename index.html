@@ -13,6 +13,12 @@
 </head>
 <body>
     <div id="map"></div>
+    <div id="logo"></div>
+    <div class="nav">
+        <a><img src="./img/nav.png"></a>
+        <a><img src="./img/nav.png"></a>
+        <a><img src="./img/nav.png"></a>
+    </div>
 </body>
 <script>
     //map setup: coordinates and zoom level 
@@ -28,6 +34,9 @@ map.removeControl(zoomControl);
     id: 'mapbox.dark',
     accessToken: 'pk.eyJ1IjoicjA4NzgxODIiLCJhIjoiY2xoNTdjd3d1MDZwbTNsbXlvM21kcHRzcSJ9.MlMqlEGm5dnjyqSUqMlbfw'
 }).addTo(map);
+
+//logo
+var logo = document.getElementById('logo');
 
 //marker setup
 var markerIcon = new L.Icon({
