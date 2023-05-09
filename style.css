@@ -14,7 +14,7 @@
     transform: translate(-50%, -50%);
     width: 100px;
     height: 50px;
-    z-index: 1000px;
+    z-index: 1000;
   }
 
 .nav {
@@ -42,7 +42,7 @@
     right: 5%;
     width: 70px;
     height: 70px;
-    z-index: 1000px;
+    z-index: 1000;
 }
 
 .search {
@@ -55,7 +55,7 @@
     left: 5%;
     width: 70px;
     height: 70px;
-    z-index: 1000px;
+    z-index: 1000;
 }
 
 .search-container {
