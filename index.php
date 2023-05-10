@@ -26,9 +26,12 @@
         </div>
         
         <div id="boxFilter">
-            <a href=""><img src="img/filterNieuw.png" alt=""></a>
+          <a href=""><img src="img/filterNieuw.png" alt=""></a>
         </div>
-
+        
+        <div class="feedback">
+          <h2>Selecteer een parkeerplaats</h2>
+        </div>
       </div>
 
 
@@ -54,13 +57,19 @@
             <a href=""><img src="img/kruisje.png" alt=""></a>
         </div>
 
+        <div class="feedback">
+          <h2>Selecteer een parkeerplaats</h2>
+        </div>
+
 
       </div>
 
-    
-    <div id="map"></div>
-    
-    <?php include 'nav.php';?>
+      
+      
+      <div id="map"></div>
+      
+
+    <?php include_once('nav.php') ;?>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.AnimatedMarker/2.1.0/AnimatedMarker.js"></script>
@@ -205,10 +214,30 @@
         document.querySelector("#searchNav").style.display = "none";
         document.querySelector("#normalNav").style.display = "block";
       });
-      
-
 
     });
+      
+      
+    let active = 0;
+
+    document.querySelector("#boxFilter").addEventListener("click", function(e) {
+      e.preventDefault();
+
+      if (active == 0) {
+      active++;
+
+      // Making the feedback bigger
+      document.querySelector(".feedback").style.bottom = "80px";
+      document.querySelector(".feedback").style.height = "160px";
+      } else if (active == 1) {
+        active = 0;
+
+        // When clicking again on filter, making feedback smaller
+        document.querySelector(".feedback").style.bottom = "80px";
+        document.querySelector(".feedback").style.height = "80px";
+    }
+  });
+
 
 
 
