@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="bg-[#11211F] text-[#F2FFFF] h-20 fixed left-0 bottom-0 w-full z-0" >
-        <div class="flex justify-center gap-12 pt-2">
+        <div class="flex justify-evenly pt-2">
 
             <div class="w-20">
                 <a href="#"><img src="img/navIcon1.png" alt="icon1"></a>   
