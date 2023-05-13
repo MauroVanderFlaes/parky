@@ -10,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parky</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <link rel="stylesheet" href="https://stamen-tiles.a.ssl.fastly.net/toner-lite/toner-lite.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -30,7 +30,46 @@
         </div>
         
         <div class="feedback">
-          <h2>Selecteer een parkeerplaats</h2>
+          <div id="noSteps">
+            <h2>Selecteer een parkeerplaats</h2>
+          </div>
+
+          <div id="filterNav">
+            <div class="firstDivFilter">
+              <a href="">reset</a>
+              <h2>filters</h2>
+              <a id="doneStyle" href="">done</a>
+
+            </div>
+            <div class="secondDivFilter">
+              <p>oprit</p>
+              <p>bedrijfsparking</p>
+            </div>
+            <div class="priceDiv">
+              <p>price:</p>
+            </div>
+
+            <div class="thirdDivFilter">
+              <div class="range">
+                <div class="sliderValue">
+                  <span>5</span>
+                </div>
+                <div class="field">
+                  <div class="value left">€0</div>
+                  <input type="range" min="0" max="10" value="5" steps="1">
+                  <div class="value right">€10</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="greenBtn">
+                <a href="">pas filter(s) toe</a>
+            </div>
+
+
+
+          </div>
         </div>
       </div>
 
@@ -58,7 +97,15 @@
         </div>
 
         <div class="feedback">
-          <h2>Selecteer een parkeerplaats</h2>
+          <div id="noSteps">
+            <h2>Selecteer een parkeerplaats</h2>
+          </div>
+
+          <div id="filter">
+            <a href="">reset</a>
+            <h2>filters</h2>
+            <a id="doneStyle" href="">done</a>
+          </div>
         </div>
 
 
@@ -115,6 +162,10 @@
 
     let marker2 = L.marker([51.0270892, 4.480158], {icon: markerIcon}).addTo(map);
     marker2.bindPopup("<h1>Oprit: Geitenstraat</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+
+    let marker3 = L.marker([50.88690433827671, 4.5388761393615304], {icon: markerIcon}).addTo(map);
+    marker2.bindPopup("<h1>Oprit: Craeneplein</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+
 
     // check if the Geolocation API is available
     if ("geolocation" in navigator) {
@@ -192,6 +243,11 @@
     }
 
 
+
+
+
+    document.querySelector("#filterNav").style.display = "none";
+
     document.querySelector("#boxSearch").addEventListener("click", function(e){
       e.preventDefault();
       
@@ -206,14 +262,12 @@
         document.querySelector("#normalNav").style.display = "block";
       });
 
-    
-      //after another click on search icon, the search bar will disappear
 
+      //after another click on search icon, nothing will happen
       document.querySelector("#boxSearch-bar").addEventListener("click", function(e){
         e.preventDefault();
-        document.querySelector("#searchNav").style.display = "none";
-        document.querySelector("#normalNav").style.display = "block";
       });
+
 
     });
       
@@ -228,54 +282,54 @@
 
       // Making the feedback bigger
       document.querySelector(".feedback").style.bottom = "80px";
-      document.querySelector(".feedback").style.height = "160px";
+      document.querySelector(".feedback").style.height = "306px";
+
+
+
+      //changing text from feedback
+      document.querySelector("#filterNav").style.display = "flex";
+      document.querySelector("#noSteps").style.display = "none";
+      document.querySelector("#filter").style.display = "none";
+      
+      
+
+
+
+
+
       } else if (active == 1) {
         active = 0;
 
         // When clicking again on filter, making feedback smaller
         document.querySelector(".feedback").style.bottom = "80px";
         document.querySelector(".feedback").style.height = "80px";
+
+        //changing text from feedback
+        document.querySelector("#filterNav").style.display = "none";
+        document.querySelector("#noSteps").style.display = "block";
+        
     }
   });
 
 
 
 
+  // slider
+  let slideValue = document.querySelector(".sliderValue span");
+  let inputSlider = document.querySelector(".range input");
+  inputSlider.oninput = (()=>{
+    let value = inputSlider.value;
+    slideValue.textContent = value;
+    slideValue.style.left = (value*10) + "%";
+    slideValue.classList.add("show");
+  });
+
+  inputSlider.onblur = (()=>{
+    slideValue.classList.remove("show");
+  });
 
 
 
-
-
-
-
-
-
-
-// document.querySelector("#iconSearch").addEventListener("click", function(e) {
-//   e.preventDefault();
-//   console.log("clicked");
-
-//   let searchBar = document.querySelector(".zoekbalk");
-//   searchBar.style.display = "block";
-//   document.querySelector("#closeButton").style.display = "block";
-// });
-
-// document.querySelector("#filter").addEventListener("click", function(e) {
-//   e.preventDefault();
-//   console.log("close button clicked");
-
-//   let searchBar = document.querySelector(".zoekbalk");
-//   searchBar.style.display = "none";
-//   document.querySelector("#closeButton").style.display = "none";
-// });
-
-
-
-
-  
-  //document.querySelector("#imgSearch").src = "img/searchBar.png";
-
-  //making the search bar visible
 
     </script>
     
