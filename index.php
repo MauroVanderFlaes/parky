@@ -15,11 +15,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
 
       <div id="normalNav">
 
-        <div id="logo"><img src="img/logo.png" alt=""></div>
+        <div class="logo"><img src="img/logo.png" alt=""></div>
         
         <div id="boxSearch">
             <a href=""><img src="img/search.png" alt=""></a>
@@ -30,46 +30,58 @@
         </div>
         
         <div class="feedback">
-          <div id="noSteps">
-            <h2>Selecteer een parkeerplaats</h2>
-          </div>
+          <div class="feedbackFilter">
 
-          <div id="filterNav">
-            <div class="firstDivFilter">
-              <a href="">reset</a>
-              <h2>filters</h2>
-              <a id="doneStyle" href="">done</a>
-
+            <div id="noSteps">
+              <h2>Selecteer een parkeerplaats</h2>
             </div>
-            <div class="secondDivFilter">
-              <p>oprit</p>
-              <p>bedrijfsparking</p>
-            </div>
-            <div class="priceDiv">
-              <p>price:</p>
-            </div>
-
-            <div class="thirdDivFilter">
-              <div class="range">
-                <div class="sliderValue">
-                  <span>5</span>
-                </div>
-                <div class="field">
-                  <div class="value left">€0</div>
-                  <input type="range" min="0" max="10" value="5" steps="1">
-                  <div class="value right">€10</div>
-                </div>
+  
+            <div id="filterNav">
+              <div class="firstDivFilter">
+                <a href="">reset</a>
+                <h2>filters</h2>
+                <a id="doneStyle" href="">done</a>
+  
               </div>
-
+              <div class="secondDivFilter">
+                <p>oprit</p>
+                <p>bedrijfsparking</p>
+              </div>
+              <div class="priceDiv">
+                <p>price:</p>
+              </div>
+  
+              <div class="thirdDivFilter">
+                <div class="range">
+                  <div class="sliderValue">
+                    <span>5</span>
+                  </div>
+                  <div class="field">
+                    <div class="value left">€0</div>
+                    <input type="range" min="0" max="10" value="5" steps="1">
+                    <div class="value right">€10</div>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="greenBtn">
+                  <a href="">pas filter(s) toe</a>
+              </div>
             </div>
-
-            <div class="greenBtn">
-                <a href="">pas filter(s) toe</a>
-            </div>
-
-
-
           </div>
+
+          <div class="parking">
+            <div class="boxImgParking">
+              <img src="img/parking1.png" alt="">
+            </div>
+            <p>parking: douaneplein - Mechelen</p>
+            
+          </div>
+
+
+
+
         </div>
       </div>
 
@@ -164,7 +176,7 @@
     marker2.bindPopup("<h1>Oprit: Geitenstraat</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
 
     let marker3 = L.marker([50.88690433827671, 4.5388761393615304], {icon: markerIcon}).addTo(map);
-    marker2.bindPopup("<h1>Oprit: Craeneplein</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+    // marker3.bindPopup("<h1>Oprit: Craeneplein</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
 
 
     // check if the Geolocation API is available
@@ -329,6 +341,16 @@
   });
 
 
+
+  marker.on('click', function(e){
+    document.querySelector(".feedback").style.bottom = "80px";
+    document.querySelector(".feedback").style.height = "306px";
+    document.querySelector("#filterNav").style.display = "flex";
+    document.querySelector("#noSteps").style.display = "none";
+    document.querySelector("#filter").style.display = "none";
+    document.querySelector(".parking").style.display = "block";
+    document.querySelector(".feedbackFilter").style.display = "none";
+  });
 
 
     </script>
