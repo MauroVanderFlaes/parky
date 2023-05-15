@@ -7,7 +7,7 @@
 /* nieuwe balk */
 
 
-#logo {
+.logo {
     /* background-image: url("./img/logo.png"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -20,6 +20,143 @@
     height: 50px;
     z-index: 1000;
   }
+
+
+.logoLogin{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoLogin img{
+    width: 152px;
+    height: 48px;
+}
+
+.bodyy{
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url("../img/bgWorks.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 500px 600px;
+  }
+
+
+
+.boxLogin{
+    margin-top: 319px;
+    width: 500px;
+    height: 600px;
+            
+}
+
+.inputBox{
+    color: #F2FFFF;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+.inputBox h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.inputBox p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+    width: 150px;
+    position: relative;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+}
+
+.formBtn{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 112px;
+
+}
+
+.formBtn p{
+    color: #F2FFFF;
+}
+
+
+.inlogBtn{
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: #F2FFFF;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+
+}
+.inlogBtn p{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
+.inlogBtn2{
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: #F2FFFF;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+}
+
+.inlogBtn2 p{
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
+
+
+
+
+
+
+
 
 
 #boxSearch {
@@ -343,6 +480,25 @@
 
 .greenBtn a{
     color: #F2FFFF;
+}
+
+.parking {
+    display: none;
+    width: 100%;
+    
+}
+
+.boxImgParking{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.boxImgParking img{
+    
+    width: auto;
 }
 
 
