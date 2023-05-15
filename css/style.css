@@ -7,7 +7,7 @@
 /* nieuwe balk */
 
 
-#logo {
+.logo {
     /* background-image: url("./img/logo.png"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -20,6 +20,143 @@
     height: 50px;
     z-index: 1000;
   }
+
+
+.logoLogin{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoLogin img{
+    width: 152px;
+    height: 48px;
+}
+
+.bodyy{
+    padding: 0px;
+    margin: 0px;
+
+    background-image: url("../img/bgWorks.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 500px 600px;
+  }
+
+
+
+.boxLogin{
+    margin-top: 319px;
+    width: 500px;
+    height: 600px;
+            
+}
+
+.inputBox{
+    color: #F2FFFF;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
+.inputBox h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.inputBox p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+    width: 150px;
+    position: relative;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+}
+
+.formBtn{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 112px;
+
+}
+
+.formBtn p{
+    color: #F2FFFF;
+}
+
+
+.inlogBtn{
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: #F2FFFF;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+
+}
+.inlogBtn p{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
+.inlogBtn2{
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: #F2FFFF;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+}
+
+.inlogBtn2 p{
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
+
+
+
+
+
+
+
 
 
 #boxSearch {
@@ -60,7 +197,7 @@
     display: none;
 }
 
-input:focus {
+.searchInput:focus {
     outline: none;
     padding-left: 50px;
 }
@@ -98,7 +235,7 @@ input:focus {
 
 
 #searchInputBox{
-    width: 305px;
+    width: 83%;
     height: 50px;
     top: 5%;
     left: 8.5%;
@@ -108,7 +245,7 @@ input:focus {
 }
 
 .searchInput{
-    width: 420px;
+    width: 100%;
     height: 50px;
     border-radius: 50px;
     background-color: #F2FFFF;
@@ -119,6 +256,250 @@ input:focus {
 }
 
 
+/* instructies */
+
+.feedback{
+    position: absolute;
+    display: inline-block;
+    /* align text in center */
+    text-align: center;
+
+    height: 80px;
+    bottom: 80px;
+    width: 100%;
+    background-color: #F2FFFF;
+    z-index: 50;
+    
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.feedback h2{
+    place-items: center;    
+    
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.feedback a{
+    /* display: none; */
+    
+    color: #11211F;
+}
+
+#filterNav{
+    
+    /* align items in row */
+
+    margin-left: 24px;
+    margin-right: 24px;
+    
+    color: #11211F;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#filterNav h2{
+    position: relative;
+    top: -10px;
+}
+
+#doneStyle{
+    
+    /* font color */
+    color: #22C7A6;
+
+    
+}
+.btnFilters{
+    display: block;
+    
+}
+
+.firstDivFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+}
+
+.secondDivFilter{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+}
+
+.secondDivFilter p{
+    border: 2px solid #22C7A6;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.secondDivFilter p:hover{
+    background-color: #22C7A6;
+    color: #F2FFFF;
+}
+
+/* slider */
+.range{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+}
+.range .sliderValue{
+    position: relative;
+    width: 100%;
+    
+
+}
+
+.range .sliderValue span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    
+    color: #F2FFFF;
+    font-weight: bold;
+    top: -40px;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+    line-height: 55px;
+    z-index: 2;
+}
+.range .sliderValue span.show{
+    transform: translateX(-50%) scale(1);
+}
+
+.range .sliderValue span:after{
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background: #22C7A6; 
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border: 2px solid #F2FFFF;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+
+.range .field{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.range .field .value{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #22C7A6;
+}
+.range .field .value.left{
+    left: -22px;
+}
+
+.range .field .value.right{
+    right: -43px;
+}
+
+.range .field input{
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background-color: #11211F;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.range .field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #22C7A6;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+#filterNav .thirdDivFilter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -16px;
+    /* background-color: #22C7A6; */
+    
+    
+    
+}
+#filterNav .priceDiv{
+    display: flex;
+    justify-content: left;
+    margin-left: 24px;
+    margin-top: 24px;
+
+}
+
+.greenBtn {
+    background-color: #22C7A6;
+    width: auto;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.greenBtn a{
+    color: #F2FFFF;
+}
+
+.parking {
+    display: none;
+    width: 100%;
+    
+}
+
+.boxImgParking{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.boxImgParking img{
+    
+    width: auto;
+}
 
 
 
