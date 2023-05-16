@@ -21,10 +21,18 @@
     z-index: 1000;
   }
 
+.back{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+
 
 .logoLogin{
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,8 +69,21 @@
     transform: translate(-50%, -50%);
     margin: 0px;
     padding: 0px;
+}
+.inputBoxLogin{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
 
-    
+}
+
+
+
+.inputBoxLogin h2{
+    color: #F2FFFF;
 }
 
 .inputBox h2{
@@ -97,6 +118,7 @@
 
 .formBtn p{
     color: #F2FFFF;
+    
 }
 
 
@@ -149,7 +171,114 @@
     color: #F2FFFF;
 
 }
+.registerForm{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 44%;
+}
 
+.registerForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerForm form input{
+    width: 80%;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #11211F;
+    margin-top: -15px;
+}
+
+.registerForm form input:focus{
+    outline: none;
+}
+
+.registerForm form p:first-child{
+    margin-left: -305px;
+    align-items: left;
+    color:#11211F;
+    font-size: 18px;
+}
+
+.registerEmail{
+    margin-left: -330px;
+    align-items: left;
+    color:#11211F;
+    font-size: 18px;
+}
+
+
+
+
+.loginForm{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+}
+
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.loginForm form input{
+    width: 80%;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    
+    padding-left: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #11211F;
+    margin-top: -15px;
+    
+}
+
+.loginForm form input:focus{
+    outline: none;
+}
+
+.loginForm form p:first-child{
+    
+    margin-left: -305px;
+    align-items: left;
+    color:#11211F;
+    font-size: 18px;
+}
+.pswd {
+    
+    margin-left: -330px;
+    align-items: left;
+    color:#11211F;
+    font-size: 18px;
+}
+
+
+.lastLink{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.lastLink a{
+    color: #11211F;
+    text-decoration: underline;
+}
 
 
 
