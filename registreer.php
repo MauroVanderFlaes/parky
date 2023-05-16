@@ -13,19 +13,21 @@
     <div class="logoLogin"><img src="img/logo3.png" alt="foto"></div>
     <div class="boxLogin">
         <div class="inputBoxLogin">
-            <h2>inloggen</h2>
+            <h2>registreren</h2>
         </div>
-        <div class="loginForm">
+        <div class="registerForm">
             <form action="action" method="POST">
-                <p >gebruikersnaam</p>
+                <p>gebruikersnaam</p>
                 <input type="text" name="username" id="username" placeholder="gebruikersnaam">
+                <p class="registerEmail">emailadres</p>
+                <input type="text" name="email" id="email" placeholder="emailadres">
                 <p class="pswd">wachtwoord</p>
                 <input type="password" name="password" id="password" placeholder="wachtwoord">
             </form>
 
         </div>
         <div class="formBtn">
-            <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
+            <a class="inlogBtn" href="login.php"><p>registreren</p></a>
         </div>
         <div class="lastLink">
             <a href="registreer.php">nog geen account? registreer hier</a>
