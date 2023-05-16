@@ -1,10 +1,4 @@
-<?php
-
-
-
-
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,17 +9,26 @@
     <title>Document</title>
 </head>
 <body class="bodyy">
-    
+    <a class="back" href="firstScreen.php"><img src="img/back.png" alt=""></a>
     <div class="logoLogin"><img src="img/logo3.png" alt="foto"></div>
     <div class="boxLogin">
-        <div class="inputBox">
-            <h2>welkom!</h2>
-            <p>maak een keuze</p>
+        <div class="inputBoxLogin">
+            <h2>inloggen</h2>
+        </div>
+        <div class="loginForm">
+            <form action="action" method="POST">
+                <p >gebruikersnaam</p>
+                <input type="text" name="username" id="username" placeholder="gebruikersnaam">
+                <p class="pswd">wachtwoord</p>
+                <input type="password" name="password" id="password" placeholder="wachtwoord">
+            </form>
+
         </div>
         <div class="formBtn">
             <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
-            <p>of</p>
-            <a class="inlogBtn2" href="register.php">registreren</a>
+        </div>
+        <div class="lastLink">
+            <a href="registreer.php">nog geen account? registreer hier</a>
         </div>
 
         
