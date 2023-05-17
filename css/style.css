@@ -1,7 +1,19 @@
+@font-face {
+    font-family: lettertype;
+    src: url(../fonts/ProximaNova-Regular.woff);
+  }
+
+  h2 {
+    font-family: lettertype;
+    font-weight: 700;
+  }
+
+
 #map { 
     height: 90vh;
     z-index: 0;
 }
+
 
 
 /* nieuwe balk */
@@ -49,7 +61,7 @@
     background-image: url("../img/bgWorks.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-size: 500px 600px;
+    background-size: 500px 500px;
   }
 
 
@@ -57,22 +69,24 @@
 .boxLogin{
     margin-top: 319px;
     width: 500px;
-    height: 600px;
+    height: 385px;
             
 }
 
 .inputBox{
     color: #F2FFFF;
     position: absolute;
-    top: 50%;
-    left: 55%;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0px;
     padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .inputBoxLogin{
     position: absolute;
-    top: 43%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
@@ -86,9 +100,14 @@
     color: #F2FFFF;
 }
 
-.inputBox h2{
+.inputBox p{
+    font-family: lettertype;
+    font-weight: 700;
     font-size: 32px;
-    font-weight: bold;
+    
+    
+    
+
 }
 
 .inputBox p{
@@ -105,7 +124,7 @@
 .formBtn{
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 65%;
     transform: translate(-50%, -50%);
     
     display: flex;
@@ -116,9 +135,45 @@
 
 }
 
+.formBtn2{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 112px;
+
+}
+
+.formBtn2 input{
+    color: #F2FFFF;
+    font-size: 17px;
+}
+
+
+
 .formBtn p{
     color: #F2FFFF;
+    font-family: lettertype;
+    font-size: 15px;
     
+}
+
+.formBtnLogin{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 112px;
 }
 
 
@@ -134,8 +189,44 @@
     margin-left: 32px;
     margin-right: 32px;
     text-decoration: none;
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 15px;
 
 }
+
+.registerBtn {
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: #F2FFFF;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+    border: none
+    
+}
+
+.registerBtn input{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
+.registerBtn:focus{
+    outline: none;
+}
+
+
 .inlogBtn p{
     justify-content: center;
     align-items: center;
@@ -159,6 +250,9 @@
     margin-left: 32px;
     margin-right: 32px;
     text-decoration: none;
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .inlogBtn2 p{
@@ -175,7 +269,7 @@
     width: 100%;
     height: 400px;
     position: absolute;
-    top: 44%;
+    top: 40%;
 }
 
 .registerForm form{
@@ -208,7 +302,7 @@
 }
 
 .registerEmail{
-    margin-left: -330px;
+    margin-left: -340px;
     align-items: left;
     color:#11211F;
     font-size: 18px;
@@ -219,9 +313,9 @@
 
 .loginForm{
     width: 100%;
-    height: 400px;
+    height: 300px;
     position: absolute;
-    top: 50%;
+    top: 45%;
 }
 
 .loginForm form{
@@ -242,6 +336,7 @@
     font-weight: bold;
     color: #11211F;
     margin-top: -15px;
+    font-family: lettertype;
     
 }
 
@@ -255,6 +350,7 @@
     align-items: left;
     color:#11211F;
     font-size: 18px;
+    font-family: lettertype;
 }
 .pswd {
     
@@ -262,12 +358,13 @@
     align-items: left;
     color:#11211F;
     font-size: 18px;
+    font-family: lettertype;
 }
 
 
 .lastLink{
     position: absolute;
-    top: 88%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
@@ -276,6 +373,21 @@
 }
 
 .lastLink a{
+    color: #11211F;
+    text-decoration: underline;
+    font-family: lettertype;
+}
+
+.lastLinkRegister{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.lastLinkRegister a{
     color: #11211F;
     text-decoration: underline;
 }
