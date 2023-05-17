@@ -28,7 +28,7 @@
             </form>
 
         </div>
-        <div class="formBtn">
+        <div class="formBtnLogin">
             <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
         </div>
         <div class="lastLink">
