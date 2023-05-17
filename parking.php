@@ -30,6 +30,7 @@
                     echo "<p class='spot-text'>" . $spot['text'] . "</p>";
                     echo "<p class='spot-author'>By " . $spot['author'] . "</p>";
                     echo "</div>";
+                    
                 }
             }
 
