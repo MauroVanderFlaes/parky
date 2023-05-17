@@ -3,10 +3,10 @@
         <div class="flex justify-evenly pt-2">
 
             <div class="w-20">
-                <a href="#"><img src="img/navIcon1.png" alt="icon1"></a>   
+                <a href="parking.php"><img src="img/navIcon1.png" alt="icon1"></a>   
             </div>
             <div class="w-20 relative bottom-1">
-                <a href="#"><img src="img/navIcon2.png" alt="icon2"></a>
+                <a href="index.php"><img src="img/navIcon2.png" alt="icon2"></a>
                 
             </div>
             <div class="w-20" >  
