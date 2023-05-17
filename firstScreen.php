@@ -16,19 +16,21 @@
 </head>
 <body class="bodyy">
     
-    <div class="logoLogin"><img src="img/logo3.png" alt="foto"></div>
-    <div class="boxLogin">
-        <div class="inputBox">
-            <h2>welkom!</h2>
-            <p>maak een keuze</p>
-        </div>
-        <div class="formBtn">
-            <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
-            <p>of</p>
-            <a class="inlogBtn2" href="registreer.php">registreren</a>
-        </div>
 
-        
-    </div>
+        <div class="logoLogin"><img src="img/logo3.png" alt="foto"></div>
+        <div class="boxLogin">
+            <div class="inputBox">
+                <h2>welkom!</h2>
+                <p>maak een keuze</p>
+            </div>
+            <div class="formBtn">
+                <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
+                <p>of</p>
+                <a class="inlogBtn2" href="registreer.php">registreren</a>
+            </div>
+    
+            
+        </div>
+    
 </body>
 </html>
