@@ -1,93 +1,151 @@
-#map { 
-    height: 90vh;
-    z-index: 0;
+body {
+  background-color: #F2FFFF;
+}
+
+
+#map {
+  height: 90vh;
+  z-index: 0;
 }
 
 #logo {
-    background-image: url("./img/logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 50px;
-    z-index: 1000;
-  }
+  background-image: url("./img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  z-index: 1000;
+}
+
+#logo_zwart {
+  background-image: url("./img/logo_zwart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  z-index: 1000;
+}
 
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
 }
 
 .nav a {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 .nav img {
-    width: 50px;
+  width: 50px;
 }
 
 #filter {
-    background-image: url("./img/filter.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 70px;
-    height: 70px;
-    z-index: 1000;
+  background-image: url("./img/filter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 70px;
+  height: 70px;
+  z-index: 1000;
 }
 
 .search {
-    background-image: url("./img/search.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 70px;
-    height: 70px;
-    z-index: 1000;
+  background-image: url("./img/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 70px;
+  height: 70px;
+  z-index: 1000;
 }
 
 .search-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .search-bar {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-  
-  .search-bar input[type="text"] {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  .search-bar button[type="submit"] {
-    border: none;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-bar button[type="submit"] {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+  width: auto;
+  height: 50vh;
+  background-color: #22C7A6;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+}
+
+.spot_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.noposts {
+  color: #F2FFFF;
+  margin-bottom: 4vh;
+}
+
+.add-spot {
+  font-size: 50px;
+  color: #F2FFFF;
+}
+
