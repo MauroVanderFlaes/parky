@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php
+if(isset($_POST['register'])) {
+    if(!empty($_POST)) {
+
+
+        $user = new User();
+
+
+
+
+        // $gebruikersnaam = $_POST['username'];
+        // $email = $_POST['email'];
+        // $wachtwoord = $_POST['password'];
+        // var_dump($_POST);
+
+    }
+} else {
+    $error="vul alle velden in aub";
+}
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,22 +37,24 @@
             <h2>registreren</h2>
         </div>
         <div class="registerForm">
-            <form action="action" method="POST">
+            <form action="" method="post">
                 <p>gebruikersnaam</p>
                 <input type="text" name="username" id="username" placeholder="gebruikersnaam">
                 <p class="registerEmail">emailadres</p>
                 <input type="text" name="email" id="email" placeholder="emailadres">
                 <p class="pswd">wachtwoord</p>
                 <input type="password" name="password" id="password" placeholder="wachtwoord">
+
+                </div>
+                <div class="formBtn2">
+                    <input class="registerBtn" type="submit" value="registreren" name="register" id=""></input>
+                </div>
+                <div class="lastLinkRegister">
+                    <a href="registreer.php">Al een account? log hier in</a>
+                </div>
+
             </form>
 
-        </div>
-        <div class="formBtn">
-            <a class="inlogBtn" href="login.php"><p>registreren</p></a>
-        </div>
-        <div class="lastLink">
-            <a href="registreer.php">nog geen account? registreer hier</a>
-        </div>
 
         
     </div>
