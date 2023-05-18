@@ -47,6 +47,7 @@ class User
     public function setEmail($email)
     {
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            throw new Exception("Email is not valid");
             return false;
         } else {
             $this->email = $email;
@@ -94,6 +95,39 @@ class User
         $statement->bindValue(":password", $this->password);
         $result = $statement->execute();
         
+    }
+
+    public function canLogin($username, $password)
+    {
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT * FROM user WHERE username = :username");
+        $statement->bindValue(":username", $username);
+        $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+        if($user){
+            $hash = $user['password'];
+            if(password_verify($password, $hash)){
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['id'] = $user['id'];
+                $_SESSION['email'] = $user['email'];
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+
+        }
+        
+    }
+
+    public function getIdByUsername($username){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT id FROM user WHERE username = :username");
+        $statement->bindValue(":username", $username);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result['id'];
     }
 
 
