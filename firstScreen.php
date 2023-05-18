@@ -24,7 +24,7 @@
                 <p>maak een keuze</p>
             </div>
             <div class="formBtn">
-                <a class="inlogBtn" href="login.php"><p>inloggen</p></a>
+                <a class="inlogBtn3" href="login.php"><p>inloggen</p></a>
                 <p>of</p>
                 <a class="inlogBtn2" href="registreer.php">registreren</a>
             </div>
