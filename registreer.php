@@ -1,21 +1,40 @@
 <?php
+
+include_once(__DIR__ . "/bootstrap.php");
+
+
+
 if(isset($_POST['register'])) {
     if(!empty($_POST)) {
+        try {
+            $user = new User();
+            try {
+                $user->setUsername($_POST['username']);
+            } catch (\Throwable $th) {
+                $usernameError = $th->getMessage();
+            }
+            try {
+                $user->setEmail($_POST['email']);
+            } catch (\Throwable $th) {
+                $emailError = $th->getMessage();
+            }
+            try {
+                $user->setPassword($_POST['password']);
+            } catch (\Throwable $th) {
+                $passwordError = $th->getMessage();
+            }
+            
+            
+            $user->save();
+            // var_dump($user);
+            header('Location: registreer.php');
 
 
-        $user = new User();
-
-
-
-
-        // $gebruikersnaam = $_POST['username'];
-        // $email = $_POST['email'];
-        // $wachtwoord = $_POST['password'];
-        // var_dump($_POST);
+        } catch (\Throwable $th) {
+            $error = $th->getMessage();
+        }
 
     }
-} else {
-    $error="vul alle velden in aub";
 }
 
 
