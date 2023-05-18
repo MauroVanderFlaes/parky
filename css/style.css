@@ -207,7 +207,8 @@
     margin-left: 32px;
     margin-right: 32px;
     text-decoration: none;
-    border: none
+    border: none;
+    font-family: lettertype;
     
 }
 
@@ -284,6 +285,7 @@
     border-radius: 10px;
     border: none;
     padding-left: 16px;
+    font-family: lettertype;
     font-size: 15px;
     font-weight: bold;
     color: #11211F;
@@ -295,6 +297,7 @@
 }
 
 .registerForm form p:first-child{
+    font-family: lettertype;
     margin-left: -305px;
     align-items: left;
     color:#11211F;
@@ -306,6 +309,8 @@
     align-items: left;
     color:#11211F;
     font-size: 18px;
+    font-family: lettertype;
+
 }
 
 
@@ -385,6 +390,7 @@
     transform: translate(-50%, -50%);
     margin: 0px;
     padding: 0px;
+    font-family: lettertype;
 }
 
 .lastLinkRegister a{
