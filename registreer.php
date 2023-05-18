@@ -1,21 +1,40 @@
 <?php
+
+include_once(__DIR__ . "/bootstrap.php");
+
+
+
 if(isset($_POST['register'])) {
     if(!empty($_POST)) {
+        try {
+            $user = new User();
+            try {
+                $user->setUsername($_POST['username']);
+            } catch (\Throwable $th) {
+                $usernameError = $th->getMessage();
+            }
+            try {
+                $user->setEmail($_POST['email']);
+            } catch (\Throwable $th) {
+                $emailError = $th->getMessage();
+            }
+            try {
+                $user->setPassword($_POST['password']);
+            } catch (\Throwable $th) {
+                $passwordError = $th->getMessage();
+            }
+            
+            
+            $user->save();
+            // var_dump($user);
+            header('Location: index.php');
 
 
-        $user = new User();
-
-
-
-
-        // $gebruikersnaam = $_POST['username'];
-        // $email = $_POST['email'];
-        // $wachtwoord = $_POST['password'];
-        // var_dump($_POST);
+        } catch (\Throwable $th) {
+            $error = $th->getMessage();
+        }
 
     }
-} else {
-    $error="vul alle velden in aub";
 }
 
 
@@ -40,11 +59,19 @@ if(isset($_POST['register'])) {
             <form action="" method="post">
                 <p>gebruikersnaam</p>
                 <input type="text" name="username" id="username" placeholder="gebruikersnaam">
+                <?php if(isset($usernameError)): ?>
+                    <p><?php echo $usernameError; ?></p> 
+                <?php endif; ?>
                 <p class="registerEmail">emailadres</p>
                 <input type="text" name="email" id="email" placeholder="emailadres">
+                <?php if(isset($emailError)): ?>
+                    <p><?php echo $emailError; ?></p> 
+                <?php endif; ?>
                 <p class="pswd">wachtwoord</p>
                 <input type="password" name="password" id="password" placeholder="wachtwoord">
-
+                <?php if(isset($passwordError)): ?>
+                    <p><?php echo $passwordError; ?></p> 
+                <?php endif; ?>
                 </div>
                 <div class="formBtn2">
                     <input class="registerBtn" type="submit" value="registreren" name="register" id=""></input>

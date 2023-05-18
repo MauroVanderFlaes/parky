@@ -154,6 +154,10 @@
     font-size: 17px;
 }
 
+.formBtnLogin input{
+    color: #F2FFFF;
+    font-size: 17px;
+}
 
 
 .formBtn p{
@@ -173,11 +177,12 @@
     width: 500px;
     align-items: center;
     flex-direction: column;
-    margin-top: 112px;
+    margin-top: 50px;
+    
 }
 
 
-.inlogBtn{
+.inlogBtn3{
     justify-content: center;
     align-items: center;
     height: 56px;
@@ -223,12 +228,46 @@
 
 }
 
+.inlogBtn input{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* css code to remove underline from font */
+    
+    color: #F2FFFF;
+
+}
+
 .registerBtn:focus{
     outline: none;
 }
 
+.inlogBtn:focus{
+    outline: none;
+}
 
-.inlogBtn p{
+.inlogBtn{
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: #157A66;
+    border-radius: 10px;
+    color: red;
+    display: flex;
+    width: 80%;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-decoration: none;
+    border: none;
+    font-family: lettertype;
+    
+}
+
+
+
+
+.inlogBtn3 p{
     justify-content: center;
     align-items: center;
     font-size: 15px;
@@ -298,7 +337,7 @@
 
 .registerForm form p:first-child{
     font-family: lettertype;
-    margin-left: -305px;
+    margin-left: -300px;
     align-items: left;
     color:#11211F;
     font-size: 18px;
@@ -369,7 +408,7 @@
 
 .lastLink{
     position: absolute;
-    top: 93%;
+    top: 99%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
