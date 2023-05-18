@@ -92,7 +92,6 @@ class User
         $statement->bindValue(":username", $this->username);
         $statement->bindValue(":email", $this->email);
         $statement->bindValue(":password", $this->password);
-
         $result = $statement->execute();
         
     }
