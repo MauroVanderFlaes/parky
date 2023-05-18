@@ -28,6 +28,10 @@
         <div id="boxFilter">
           <a href=""><img src="img/filterNieuw.png" alt=""></a>
         </div>
+
+        <div id="centerIcon">
+            <a href=""><img src="img/centerIcon.png" alt=""></a>
+        </div>
         
         <div class="feedback">
           <div class="feedbackFilter">
@@ -351,6 +355,15 @@
     document.querySelector(".parking").style.display = "block";
     document.querySelector(".feedbackFilter").style.display = "none";
   });
+
+
+
+  //update live location of user after clicking on center icon
+  document.querySelector("#centerIcon").addEventListener("click", function(e){
+    e.preventDefault();
+    updateLocation();
+  });
+
 
 
     </script>
