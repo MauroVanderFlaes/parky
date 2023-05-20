@@ -14,17 +14,29 @@
 
 <body>
     <div id="logo_zwart"></div>
-    <div class="placement">
-        <div class="swiper-slide card">
-            <div class="card">
-                <div class="card-content">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
+    <div class="options">
+        <a href="">traveller</a>
+        <a href="">parker</a>
+    </div>
+    <div class="title">
+        <h1>parking toevoegen</h1>
+    </div>
+    <div class="oprit">
+        <img src="img/parkingOprit.png" alt="foto">
+        <h1>oprit</h1>
+        <p>Je eigen oprit beschikbaar stellen voor travellers.</p>
+    </div>
+    <div class="menu">
+        
+        <div class="active"><a href=""></a></div>
+        <div class="inactive"><a href="spotChoose2.php"></a></div>
+        <a href="spotChoose2.php"><img src="img/arrowR.png" alt="r"></a>
+    </div>
+    
+    <div class="boxBtn">
+        <a class="btn" href="opritInfo.php">oprit kiezen</a>
+        
     </div>
 
 
