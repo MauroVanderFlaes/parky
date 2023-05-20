@@ -41,6 +41,15 @@
     left: 4%;
 }
 
+.back2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    
+}
+
 
 .logoLogin{
     position: absolute;
@@ -852,7 +861,204 @@
     z-index: 1000;
   }
 
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: lettertype;
+    font-weight: 1000;
+}
 
+.options a:first-child{
+    margin-right: 10px;
+    color: #D9D9D9;
+}
+.options a:last-child{
+    margin-left: 10px;
+    color: #157A66;
+    border-bottom: 2px solid #157A66;
+}
+
+
+.title{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 24px;
+    color: #11211F;
+}
+
+.oprit{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oprit2{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.oprit3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.oprit2 h1{
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 24px;
+    color: #11211F;
+}
+
+.oprit2 p{
+    
+    width: 480px;   
+    height: 480px;
+    text-align: center;
+}
+
+.oprit h1{
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 24px;
+    color: #11211F;
+}
+.oprit p{
+    
+    width: 300px;   
+    height: 300px;
+    text-align: center;
+}
+
+.boxBtn {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 56px;
+    background-color: #22C7A6;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+   
+    
+    text-decoration: none;
+    border: none;
+    
+}
+
+.btn {
+    font-family: lettertype;
+    color: #F2FFFF;
+    
+    
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.menu a{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 67%;
+}
+.menu a:first-child{
+    left: 30%;
+}
+
+.menu a:last-child{
+    right: 30%;
+}
+
+.active{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 69%;
+    background-color: #11211F;
+    border-radius: 50%;
+    left: 48%;
+}
+
+.inactive{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 69%;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    left: 52%;
+}
+
+
+.adres{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adres input{
+    position: absolute;
+    top: 60%;
+    left: 40%;               
+    border: 2px solid #11211F;
+    border-radius: 10px;
+    height: 56px;
+    padding-left: 8px;
+}
 
 
 
