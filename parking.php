@@ -14,10 +14,14 @@
 <body>
     
     <div id="logo_zwart"></div>
+    <div class="options">
+        <a href="">traveller</a>
+        <a href="">parker</a>
+    </div>
     <div class="placement">
         <div class="spots">
             <?php
-
+            
             if (empty($spots)) {
                 echo '<div class="spot_content">
         <a href="./spotChoose.php" class="add-spot">&plus;</a>

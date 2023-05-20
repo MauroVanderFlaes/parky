@@ -22,20 +22,20 @@
     <div class="title">
         <h1>parking toevoegen</h1>
     </div>
-    <div class="oprit">
-        <img src="img/parkingOprit.png" alt="foto">
-        <h1>oprit</h1>
-        <p>Je eigen oprit beschikbaar stellen voor travellers.</p>
+    <div class="oprit2">
+        <img src="img/bedrijfsparking.png" alt="foto">
+        <h1>bedrijfsparking</h1>
+        <p>Ben je een onderneming dat momenteel de parking niet gebruikt, dan is de bedrijfsparking voor u de beste optie. Hier stel je de bedrijfsparking beschikbaar voor meerdere travellers. </p>
     </div>
     <div class="menu">
-        
+        <a href="spotChoose.php"><img src="img/arrowL.png" alt="l"></a>
         <div class="active"><a href=""></a></div>
-        <div class="inactive"><a href="spotChoose2.php"></a></div>
-        <a href="spotChoose2.php"><img src="img/arrowR.png" alt="r"></a>
+        <div class="inactive"><a href=""></a></div>
+        
     </div>
     
     <div class="boxBtn">
-        <a class="btn" href="opritInfo.php">oprit kiezen</a>
+        <a class="btn" href="">bedrijfsparking kiezen</a>
         
     </div>
 

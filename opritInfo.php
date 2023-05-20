@@ -14,30 +14,38 @@
 
 <body>
     <div id="logo_zwart"></div>
-    <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
+    <a class="back2" href="spotChoose.php"><img src="img/back.png" alt=""></a>
     <div class="options">
         <a href="">traveller</a>
         <a href="">parker</a>
     </div>
     <div class="title">
-        <h1>parking toevoegen</h1>
+        <h1>oprit informatie</h1>
     </div>
-    <div class="oprit">
+    <div class="oprit3">
         <img src="img/parkingOprit.png" alt="foto">
-        <h1>oprit</h1>
-        <p>Je eigen oprit beschikbaar stellen voor travellers.</p>
-    </div>
-    <div class="menu">
         
-        <div class="active"><a href=""></a></div>
-        <div class="inactive"><a href="spotChoose2.php"></a></div>
-        <a href="spotChoose2.php"><img src="img/arrowR.png" alt="r"></a>
+    </div>
+
+    <div>
+        <form action="" method="post">
+            <div class="adres">
+                <p>adres</p>
+                <input type="text" name="adres" id="adres" placeholder="stad, straat, nummer">
+
+            </div>
+        </form>
     </div>
     
+
+
+   
+    
     <div class="boxBtn">
-        <a class="btn" href="opritInfo.php">oprit kiezen</a>
-        
+        <a class="btn" href="opritInfo.php">oprit toevoegen</a>
     </div>
+
+
 
 
     <?php include 'nav.php'; ?>
