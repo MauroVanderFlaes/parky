@@ -165,6 +165,7 @@ $getLocation = User::getCoordinates($_SESSION['user_id']);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       maxZoom: 20,
+      minZoom: 9,
       id: 'mapbox.dark',
       accessToken: 'pk.eyJ1IjoicjA4NzgxODIiLCJhIjoiY2xoNTdjd3d1MDZwbTNsbXlvM21kcHRzcSJ9.MlMqlEGm5dnjyqSUqMlbfw'
     }).addTo(map);
