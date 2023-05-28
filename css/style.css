@@ -1040,24 +1040,32 @@
 .adres{
     position: absolute;
     top: 60%;
-    left: 20%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 180px;
+    width: 400px;
     height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 25px;
 }
 
 .adres input{
-    position: absolute;
-    top: 60%;
-    left: 40%;               
+    
+           
     border: 2px solid #11211F;
     border-radius: 10px;
     height: 56px;
+    width: 100%;
     padding-left: 8px;
+}
+
+.boxInfo{
+    width: 400px;
+    
 }
 
 
