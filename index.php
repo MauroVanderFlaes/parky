@@ -1,5 +1,22 @@
-<?php 
+<?php
 
+include_once(__DIR__ . "/bootstrap.php");
+
+
+$user = new User();
+//get latitude and longitude from database
+// $userId = $_SESSION['user_id'];
+// $location = $user->getCoordinates($userId);
+// var_dump($location);
+
+$getLocation = User::getCoordinates($_SESSION['user_id']);
+var_dump($getLocation);
+$latitude = $getLocation['latitude'];
+$longitude = $getLocation['longitude'];
+var_dump($latitude);
+var_dump($longitude);
+
+//set latitude and longitude in variables
 
 
 
@@ -136,7 +153,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.AnimatedMarker/2.1.0/AnimatedMarker.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
 
     <script>
@@ -181,6 +198,9 @@
 
     let marker3 = L.marker([50.88690433827671, 4.5388761393615304], {icon: markerIcon}).addTo(map);
     // marker3.bindPopup("<h1>Oprit: Craeneplein</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+
+    let marker6 = L.marker([<?php echo $latitude ?>, <?php echo $longitude ?>], {icon: markerIcon}).addTo(map);
+    marker6.bindPopup("<h1>Oprit: test</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
 
 
     // check if the Geolocation API is available
