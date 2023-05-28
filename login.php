@@ -11,11 +11,15 @@ if(isset($_POST['login'])) {
         if($user->canLogin($username, $password)) {
             $_SESSION['loggedIn'] = true;
             $_SESSION['id'] = $user->getIdByUsername($username);
+            $_SESSION['username'] = $username;
+            // $_SESSION['user_id'] = $_SESSION['id'];
+            
             header('Location: index.php');
         } else {
             $loginError = "Gebruikersnaam of wachtwoord is onjuist";
         }
     }
+
 }
 
 
