@@ -12,7 +12,7 @@ if(isset($_POST['login'])) {
             $_SESSION['loggedIn'] = true;
             $_SESSION['id'] = $user->getIdByUsername($username);
             $_SESSION['username'] = $username;
-            // $_SESSION['user_id'] = $_SESSION['id'];
+            $_SESSION['user_id'] = $_SESSION['id'];
             
             header('Location: index.php');
         } else {
