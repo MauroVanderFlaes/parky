@@ -32,7 +32,7 @@ if(!empty($_POST)) {
 
         $user->setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude);
     } else {
-        echo "no results";
+        echo "adress doesnt exist";
     }
 
 
