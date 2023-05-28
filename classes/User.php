@@ -155,10 +155,10 @@ class User
 
     public static function getCoordinates($userId){
         $conn = Db::getInstance();
-        $statement = $conn->prepare("SELECT latitude, longitude FROM locations WHERE user_id = :user_id");
+        $statement = $conn->prepare("SELECT latitude, longitude FROM locations WHERE user_id = :user_id ORDER BY id DESC");
         $statement->bindValue(":user_id", $userId);
         $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
 

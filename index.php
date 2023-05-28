@@ -2,21 +2,18 @@
 
 include_once(__DIR__ . "/bootstrap.php");
 
-
 $user = new User();
-//get latitude and longitude from database
-// $userId = $_SESSION['user_id'];
-// $location = $user->getCoordinates($userId);
-// var_dump($location);
 
 $getLocation = User::getCoordinates($_SESSION['user_id']);
-var_dump($getLocation);
-$latitude = $getLocation['latitude'];
-$longitude = $getLocation['longitude'];
-var_dump($latitude);
-var_dump($longitude);
+// var_dump($getLocation);
+// var_dump($latitude);
+// var_dump($longitude);
 
-//set latitude and longitude in variables
+
+
+
+
+
 
 
 
@@ -168,6 +165,7 @@ var_dump($longitude);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       maxZoom: 20,
+      minZoom: 9,
       id: 'mapbox.dark',
       accessToken: 'pk.eyJ1IjoicjA4NzgxODIiLCJhIjoiY2xoNTdjd3d1MDZwbTNsbXlvM21kcHRzcSJ9.MlMqlEGm5dnjyqSUqMlbfw'
     }).addTo(map);
@@ -189,18 +187,19 @@ var_dump($longitude);
       shadowSize: [41, 41]
     });
 
-    //markers on the map
-    let marker = L.marker([51.0255892, 4.492858], {icon: markerIcon}).addTo(map);
-    marker.bindPopup("<h1>Bedrijfsparking: Douaneplein</h1><br><a>Reserveer nu</a>");
 
-    let marker2 = L.marker([51.0270892, 4.480158], {icon: markerIcon}).addTo(map);
-    marker2.bindPopup("<h1>Oprit: Geitenstraat</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
 
-    let marker3 = L.marker([50.88690433827671, 4.5388761393615304], {icon: markerIcon}).addTo(map);
-    // marker3.bindPopup("<h1>Oprit: Craeneplein</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+    //make foreach loop to get all the coordinates from the database and make a marker for each coordinate
+    <?php foreach($getLocation as $location): ?>
+      var marker = L.marker([<?php echo $location['latitude']; ?>, <?php echo $location['longitude']; ?>], {icon: markerIcon}).addTo(map);
+    <?php endforeach; ?>
 
-    let marker6 = L.marker([<?php echo $latitude ?>, <?php echo $longitude ?>], {icon: markerIcon}).addTo(map);
-    marker6.bindPopup("<h1>Oprit: test</h1><br><a>Reserveer nu</a><a>Parkeer nu</a>");
+
+    
+
+    // make evertime the latitute and longitude changes
+    
+
 
 
     // check if the Geolocation API is available

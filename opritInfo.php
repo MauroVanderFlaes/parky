@@ -2,6 +2,7 @@
 
 include_once(__DIR__ . "/bootstrap.php");
 
+
 if(!empty($_POST)) {
 
     $user = new User();
@@ -31,15 +32,13 @@ if(!empty($_POST)) {
 
         $user->setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude);
     } else {
-        echo "no results";
+        echo "adress doesnt exist";
     }
-
 
 
 }
 
 // $user->getCoordinates();
-
 
 
 ?><!DOCTYPE html>
