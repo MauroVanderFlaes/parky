@@ -5,7 +5,8 @@ class User
     private string $username;
     private string $email;
     private string $password;
-
+    private string $location;
+    private string $postalCode;
 
     /**
      * Get the value of username
@@ -128,6 +129,37 @@ class User
         $statement->execute();
         $result = $statement->fetch(PDO::FETCH_ASSOC);
         return $result['id'];
+    }
+
+    public function setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("INSERT INTO locations (user_id, location, postcode, city, latitude, longitude) values (:user_id, :location, :postcode, :city, :latitude, :longitude)");
+        $statement->bindValue(":user_id", $user_Id);
+        $statement->bindValue(":location", $location);
+        $statement->bindValue(":postcode", $postcode);
+        $statement->bindValue(":city", $city);
+        $statement->bindValue(":latitude", $latitude);
+        $statement->bindValue(":longitude", $longitude);
+        $result = $statement->execute();
+
+    }
+
+
+    /**
+     * Get the value of location
+     */ 
+    public function getLocation()
+    {
+        return $this->location;
+    }
+
+    public static function getCoordinates($userId){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT latitude, longitude FROM locations WHERE user_id = :user_id");
+        $statement->bindValue(":user_id", $userId);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
 
