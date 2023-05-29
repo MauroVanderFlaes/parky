@@ -1,10 +1,13 @@
 <?php
 
 include_once(__DIR__ . "/bootstrap.php");
+// load logincheck 
+include_once(__DIR__ . "/LoginCheck.php");
+
 
 $user = new User();
 
-$getLocation = User::getCoordinates($_SESSION['user_id']);
+$getLocation = User::getCoordinates();
 // var_dump($getLocation);
 // var_dump($latitude);
 // var_dump($longitude);

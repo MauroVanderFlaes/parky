@@ -1,7 +1,7 @@
 <?php
 
 include_once(__DIR__ . "/bootstrap.php");
-
+include_once(__DIR__ . "/LoginCheck.php");
 
 if(!empty($_POST)) {
 
@@ -20,13 +20,13 @@ if(!empty($_POST)) {
             'header'=>'User-Agent: PHP'
         ]
         ];
-    
+
 
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
     $response = json_decode($result, true);
 
-    if(!empty($response)){
+    if(!empty($response)) {
         $latitude = round((float) $response[0]['lat'], 6);
         $longitude = round((float) $response[0]['lon'], 6);
 
@@ -37,9 +37,6 @@ if(!empty($_POST)) {
 
 
 }
-
-// $user->getCoordinates();
-
 
 ?><!DOCTYPE html>
 <html lang="en">
