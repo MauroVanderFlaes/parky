@@ -15,11 +15,6 @@ $getLocation = User::getCoordinates();
 
 
 
-
-
-
-
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
