@@ -928,7 +928,7 @@
 
 .oprit3{
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 160px;
@@ -1039,7 +1039,7 @@
 
 .adres{
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
