@@ -151,7 +151,7 @@ $getLocation = User::getCoordinates();
     <script src="script.js"></script>
 
 
-    <script>
+<script>
 
     //map setup: coordinates and zoom level 
     let map = L.map('map').setView([51.0270892, 4.480158], 15);
@@ -275,10 +275,6 @@ $getLocation = User::getCoordinates();
       console.error('Geolocation API not available');
     }
 
-
-
-
-
     document.querySelector("#filterNav").style.display = "none";
 
     document.querySelector("#boxSearch").addEventListener("click", function(e){
@@ -304,6 +300,7 @@ $getLocation = User::getCoordinates();
 
     });
       
+    
       
     let active = 0;
 
@@ -383,7 +380,7 @@ $getLocation = User::getCoordinates();
 
 
 
-    </script>
+</script>
     
     
 </body>
