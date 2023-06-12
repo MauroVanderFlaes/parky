@@ -18,7 +18,9 @@ include_once(__DIR__ . "/LoginCheck.php");
 </head>
 
 <body>
+<div class="logo">
     <div id="logo_zwart"></div>
+    </div>
     <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
     <div class="options">
         <a href="">traveller</a>
