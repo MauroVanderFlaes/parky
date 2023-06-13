@@ -68,6 +68,8 @@
 
 
 
+
+
 .boxLogin{
     margin-top: 319px;
     width: 500px;
@@ -887,10 +889,24 @@
     transform: translate(-50%, -50%);
 }
 
+.title2{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title2 h1{
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 20px;
+    color: #11211F;
+}
+
 .title h1{
     font-family: lettertype;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: #11211F;
 }
 
@@ -972,16 +988,42 @@
     height: 56px;
     background-color: #22C7A6;
     border-radius: 10px;
-    position: absolute;
-    top: 80%;
-    left: 50%;
+    /* position: absolute;
+    top: 99%;
+    left: 50%; 
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 80%; */
    
-    
+
+    /* margin-top: 150px; */
     text-decoration: none;
     border: none;
     
+}
+
+.boxBtnChoose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 56px;
+    background-color: #22C7A6;
+    border-radius: 10px;
+   
+    width: 80%;
+    margin-left: 60px;
+   
+
+    /* margin-top: 150px; */
+    text-decoration: none;
+    border: none;
+}
+
+.adres .opritBtn{
+    width: 328px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .btn {
@@ -994,6 +1036,7 @@
 .menu{
     width: 40px;
     height: 40px;
+    margin-bottom: 500px;
     
 }
 
@@ -1038,30 +1081,123 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 180px;
+    height: 1900px;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 25px;
+    align-items: center;
+
+    margin-top: 380px;
 }
+
 
 .adres input{
     
            
+    /* border: 2px solid #11211F;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%; */
+    
+}
+
+.boxOpritinfo{
+    margin-top: 420px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.adresOprit{
+    display: flex;
+    flex-direction: column;
+    margin-left: -300px;
+}
+
+
+.postcodeOprit{
+    display: flex;
+    flex-direction: row;
+    margin-left: -260px;
+   
+}
+
+.streetOprit{
+    display: flex;
+    flex-direction: row;
+    margin-left: -200px;
+}
+
+
+
+
+
+.boxOpritinfo input{
     border: 2px solid #11211F;
     border-radius: 10px;
     height: 56px;
-    width: 100%;
-    padding-left: 8px;
+    width: 328px;
+    padding-left: 12px;
 }
+
+.boxOpritinfo p{
+    padding-top: 10px;
+}
+
+/* .boxOpritinfo input::placeholder{
+    padding-left: 12px;
+} */
+
 
 .boxInfo{
     width: 400px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+
+
+
+/* sliderOprit page */
+
+.rangeOprit{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    
     
 }
+.rangeOprit .sliderValueOprit{
+    position: relative;
+    width: 100%;
+    
+
+
+}
+
+.rangeOprit .sliderValueOprit span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    
+    color: #F2FFFF;
+    font-weight: bold;
+    top: -40px;
+    
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+    line-height: 55px;
+    z-index: 2;
+}
+.rangeOprit .sliderValueOprit span.show{
+    transform: translateX(-20%) scale(1);
+
 
 .plaats {
     margin-bottom: 25%;
@@ -1081,6 +1217,7 @@
     margin: 5% 0%;
     padding: 5%;
     border-radius: 25px;
+
 }
 
 .gegevens {
@@ -1088,6 +1225,24 @@
     justify-content: space-between;
     margin-bottom: 5%;
 }
+
+
+.rangeOprit .sliderValueOprit span:after{
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background: #22C7A6; 
+    left: 20%;
+    
+    transform: translateX(-50%) rotate(45deg);
+    border: 2px solid #F2FFFF;
+    z-index: -1;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
 
 .gegevens img {
     width: 10%;
@@ -1101,6 +1256,7 @@
 .links {
     display: flex;
     flex-direction: column;
+
 }
 
 .rechts {
@@ -1110,12 +1266,175 @@
 }
 
 
+
+.rangeOprit .fieldOprit{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.rangeOprit .fieldOprit .value{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #22C7A6;
+}
+.rangeOprit .fieldOprit .value.left{
+    left: -30px;
+}
+
+.rangeOprit .fieldOprit .value.right{
+    right: -43px;
+}
+
+.rangeOprit .fieldOprit input{
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background-color: #11211F;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.rangeOprit .fieldOprit input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #22C7A6;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+.thirdDivFilterOprit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 16px;
+    /* background-color: #22C7A6; */
+    
+
+    
+}
+
+.tariefCls{
+    
+    margin-bottom: -20px;
+
+}
+
+
+/* .boxSlider{
+    margin-left: 34px;
+    margin-right: 24px;
+    
+} */
+
+
+
+
+
+/* calender */
+
+.weekend {
+    background-color: #157A66;
+}
+
+/* .calendar {
+    border: 1px solid #11211F;
+    border-radius: 10px;
+} */
+
+
+
+
+
+.calendar th {
+    padding: 12px 0;
+    width: calc(300px / 7);
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.calendar th:last-child {
+    margin-right: 0;
+}
+
+
+    
+/* 
+
+.calendar td {
+        padding: 8px;
+    }
+    .calendar-caption {
+        text-align: center;
+        padding: 10px;
+    }
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #11211F;
+    }
+    .calendar-navigation {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    .calendar-navigation a {
+        text-decoration: none;
+        color: #333;
+    }
+    .calendar-wrapper {
+        width: 300px; 
+        margin: 0 auto;
+    }
+    .calendar th {
+        padding: 12px 0; 
+        width: calc(300px / 7); 
+        box-sizing: border-box; 
+        text-align: center; 
+        margin-right: 8px; 
+    }
+    .calendar th:last-child {
+        margin-right: 0; 
+    }
+    .calendar thead th:not(:last-child) {
+        border-right: 1px solid #ccc; 
+    }
+    .selected-day {
+        background-color: #11211F;
+        color: #F2FFFF;
+    }
+
+    .calendar-day {
+    padding: 8px;
+    background-color: #22C7A6;
+    color: #11211F;
+}
+
+.calendar-day.selected-day {
+    background-color: #11211F;
+    color: #F2FFFF;
+} */
+
+
 .accBox h2 {
     font-family: lettertype;
     font-weight: 600;
     font-size: 24px;
     color: #F2FFFF;
 }
+
 
 
 
@@ -1176,6 +1495,144 @@
     margin-top: 5%;
     text-decoration-line: underline;
 }
+
+
+.calendar td {
+    padding: 8px;
+}
+.calendar-caption {
+    text-align: center;
+    padding: 10px;
+}
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    /* padding-bottom: 300px;  */
+    margin-bottom: 24px;
+    border: 2px solid #11211F;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    
+    
+}
+.calendar-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.calendar-navigation a {
+    text-decoration: none;
+    color: #333;
+}
+.calendar-wrapper {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding-left: 30px;
+}
+.calendar th {
+    padding: 12px 0; /* Add more vertical padding */
+    width: calc(300px / 7); /* Distribute the width equally among the days */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: center; /* Center the day labels */
+    margin-right: 8px; /* Add space between the day labels */
+}
+.calendar th:last-child {
+    margin-right: 0; /* Remove space for the last day label */
+}
+.calendar thead th:not(:last-child) {
+    border-right: 1px solid #ccc; /* Add a border between the day labels */
+}
+.selected-day {
+    background-color: #11211F;
+    color: #F2FFFF;
+    
+}
+
+.calendar-day {
+padding: 8px;
+background-color: #22C7A6;
+color: #11211F;
+}
+
+.calendar-day.selected-day {
+background-color: #11211F;
+color: #F2FFFF;
+
+}
+
+#selected-days{
+    margin-top: 24px;
+}
+
+#time1{
+    border: 2px solid #11211F;
+    border-radius: 10px;
+    height: 56px;
+    width: 152px;
+    padding-left: 12px;
+}
+
+#time2{
+    border: 2px solid #11211F;
+    border-radius: 10px;
+    height: 56px;
+    width: 152px;
+    padding-left: 12px;
+}
+
+.time{
+    width: 324px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.tijdstip{
+    margin-right: 280px;
+    margin-bottom: 15px;
+}
+
+.tijdstip2 {
+    margin-right: 175px;
+    margin-bottom: 15px;
+}
+
+
+.boxImgs img{
+    margin-top: 4px;
+    width: 64px;
+    height: 64px;
+}
+
+.boxImgs {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 24px;
+}
+
+.voorwaarden{
+    text-decoration: underline;
+}
+
+.textVoorwaarden{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.textVoorw{
+    margin-left: 8px;
 
 @media screen and (min-width: 600px) {
     .plaats {
@@ -1346,4 +1803,5 @@
     font-family: lettertype;
     font-weight: 600;
     font-size: 24px;
+
 }
