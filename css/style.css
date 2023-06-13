@@ -1297,6 +1297,7 @@
 .sessie-content {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     background-color: #22C7A6;

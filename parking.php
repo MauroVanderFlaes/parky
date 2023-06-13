@@ -36,7 +36,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         <h1 class="noposts">U heeft nog geen parking of oprit toegevoegd.</h1>
         </div>';
             } else {
-                foreach ($spots as $prompt) {
+                foreach ($spots as $spot) {
                     echo "<div class='spot'>";
                     echo "<h1 class='spot-title'>" . $spot['title'] . "</h1>";
                     echo "<p class='spot-text'>" . $spot['text'] . "</p>";
