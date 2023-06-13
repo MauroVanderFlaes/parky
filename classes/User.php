@@ -188,5 +188,23 @@ class User
     //     $result = $statement->execute();
     // }
 
+    public function addLocation($user_Id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("UPDATE user SET locations_count = locations_count + 1 WHERE id = :user_id");
+        $statement->bindValue(":user_id", $user_Id);
+        $result = $statement->execute();
+    }
+
+    public function getLocationCount($user_Id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT locations_count FROM user WHERE id = :user_id");
+        $statement->bindValue(":user_id", $user_Id);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result['locations_count'];
+    }
+
 
 }
+
+
