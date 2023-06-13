@@ -32,10 +32,12 @@ if($amountUser->getLocationCount($_SESSION['user_id']) >= 1){
 
 <body>
     
+<div class="logo">
     <div id="logo_zwart"></div>
+    </div>
     <div class="options">
-        <a href="">traveller</a>
-        <a href="">parker</a>
+        <a href="traveller.php" class="option">traveller</a>
+        <a href="" class="option-active">parker</a>
     </div>
     <div class="placement">
         <div class="spots">
@@ -47,7 +49,7 @@ if($amountUser->getLocationCount($_SESSION['user_id']) >= 1){
         <h1 class="noposts">U heeft nog geen parking of oprit toegevoegd.</h1>
         </div>';
             } else {
-                foreach ($spots as $prompt) {
+                foreach ($spots as $spot) {
                     echo "<div class='spot'>";
                     echo "<h1 class='spot-title'>" . $spot['title'] . "</h1>";
                     echo "<p class='spot-text'>" . $spot['text'] . "</p>";

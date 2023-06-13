@@ -4,10 +4,15 @@ include_once(__DIR__ . "/LoginCheck.php");
 
 
 
+
 if(!empty($_POST)) {
 
+if (!empty($_POST)) {
 
 
+
+
+ moreScreens-Jarne
 
     if (isset($_POST['myCheckbox']) && $_POST['myCheckbox'] == '1') {
         // Checkbox is checked, perform the desired action
@@ -67,6 +72,13 @@ if(!empty($_POST)) {
                 'header'=>'User-Agent: PHP'
             ]
         ];
+=======
+    $options = [
+        'http' => [
+            'header' => 'User-Agent: PHP'
+        ]
+    ];
+
 
         $context = stream_context_create($options);
         $result = file_get_contents($url, false, $context);
@@ -85,10 +97,17 @@ if(!empty($_POST)) {
         }
 
 
+
+    if (!empty($response)) {
+        $latitude = round((float) $response[0]['lat'], 6);
+        $longitude = round((float) $response[0]['lon'], 6);
+
+
     } else {
         // Checkbox is not checked, perform an alternate action or do nothing
         $errorCheckbox = "Accepteer de parker voorwaarden om verder te gaan";
     }
+
 
 }
 
@@ -151,6 +170,13 @@ function generateCalendar($month, $year)
 
 $month = isset($_GET['month']) ? intval($_GET['month']) : date('n');
 $year = isset($_GET['year']) ? intval($_GET['year']) : date('Y');
+=======
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
 
 $calendarMarkup = generateCalendar($month, $year);
 ?>
@@ -166,17 +192,23 @@ $calendarMarkup = generateCalendar($month, $year);
 
 </head>
 <body>
+<div class="logo">
     <div id="logo_zwart"></div>
-    <a class="back2" href="spotChoose.php"><img src="img/back.png" alt=""></a>
+    </div>
+    <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
     <div class="options">
-        <a href="">traveller</a>
-        <a href="">parker</a>
+        <a href="traveller.php" class="option">traveller</a>
+        <a href="parking.php" class="option-active">parker</a>
     </div>
     <div class="title">
         <h1>oprit informatie</h1>
     </div>
     <div class="oprit3">
         <img src="img/parkingOprit.png" alt="foto">
+
+
+
+
     </div>
 
     <div><?php if(isset($errorCheckbox)): ?></div>
@@ -308,12 +340,18 @@ $nextYear = ($month + 1) > 12 ? ($year + 1) : $year;
 
               
             </div>
+
         </div>
     </form>
 </div>
     
 
+        </form>
+    </div>
+  
+
     <?php include 'nav.php'; ?>
+
 
     <script>
 
@@ -331,9 +369,15 @@ let slideValue = document.querySelector(".sliderValueOprit span");
 
 
 
+
+
+
+
+
   inputSlider.onblur = (()=>{
     slideValue.classList.remove("show");
   });
+
 
 
 
@@ -402,4 +446,9 @@ function displaySelectedDays() {
 
     </script>
 </body>
+
+</body>
+<script src="script.js"></script>
+
+
 </html>

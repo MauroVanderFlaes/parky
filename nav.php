@@ -10,7 +10,7 @@
                 
             </div>
             <div class="w-20" >  
-                <a href="#"><img src="img/navIcon3.png" alt="icon3"></a>
+                <a href="profile.php"><img src="img/navIcon3.png" alt="icon3"></a>
             </div>
         </div>
     </div>
