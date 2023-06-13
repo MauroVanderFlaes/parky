@@ -26,6 +26,8 @@ include_once(__DIR__ . "/LoginCheck.php");
         <a href="traveller.php" class="option-active">traveller</a>
         <a href="parking.php" class="option">parker</a>
     </div>
+
+    
     
     <?php include_once('nav.php') ;?>
     <!-- <script src="script.js"></script> -->

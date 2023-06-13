@@ -23,8 +23,8 @@ include_once(__DIR__ . "/LoginCheck.php");
     </div>
     <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
     <div class="options">
-        <a href="">traveller</a>
-        <a href="">parker</a>
+        <a href="traveller.php" class="option">traveller</a>
+        <a href="parking.php" class="option-active">parker</a>
     </div>
     <div class="title">
         <h1>parking toevoegen</h1>
