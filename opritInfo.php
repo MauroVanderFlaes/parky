@@ -3,8 +3,8 @@ include_once(__DIR__ . "/bootstrap.php");
 include_once(__DIR__ . "/LoginCheck.php");
 
 
-if(!empty($_POST)) {
 
+if(!empty($_POST)) {
 
 
 
@@ -77,6 +77,9 @@ if(!empty($_POST)) {
             $longitude = round((float) $response[0]['lon'], 6);
 
             $user->setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude, $prijs, $selectedDaysOutput, $selectedImage, $soortParking, $startUur, $eindUur);
+            //verhoog aantal toevoegde locaties met 1
+            $user->addLocation($user_Id);
+            header("Location: index.php");
         } else {
             echo "Address doesn't exist";
         }
