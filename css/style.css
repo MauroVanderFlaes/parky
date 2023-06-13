@@ -1323,3 +1323,27 @@
     font-weight: 600;
     font-size: 24px;
 }
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+}
+
+.archief {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.archief h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    font-family: lettertype;
+    font-weight: 600;
+    font-size: 24px;
+}
