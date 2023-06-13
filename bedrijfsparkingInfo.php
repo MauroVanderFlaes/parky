@@ -166,11 +166,12 @@ $calendarMarkup = generateCalendar($month, $year);
 
 </head>
 <body>
+<div class="logo">
     <div id="logo_zwart"></div>
-    <a class="back2" href="spotChoose.php"><img src="img/back.png" alt=""></a>
+    </div>
     <div class="options">
-        <a href="">traveller</a>
-        <a href="">parker</a>
+        <a href="traveller.php" class="option">traveller</a>
+        <a href="parking.php" class="option-active">parker</a>
     </div>
     <div class="title2">
         <h1>bedrijfsparking informatie</h1>

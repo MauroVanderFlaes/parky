@@ -5,14 +5,11 @@ include_once(__DIR__ . "/LoginCheck.php");
 
 
 
-if(!empty($_POST)) {
-
 if (!empty($_POST)) {
 
 
 
 
- moreScreens-Jarne
 
     if (isset($_POST['myCheckbox']) && $_POST['myCheckbox'] == '1') {
         // Checkbox is checked, perform the desired action
@@ -72,12 +69,6 @@ if (!empty($_POST)) {
                 'header'=>'User-Agent: PHP'
             ]
         ];
-=======
-    $options = [
-        'http' => [
-            'header' => 'User-Agent: PHP'
-        ]
-    ];
 
 
         $context = stream_context_create($options);
@@ -95,13 +86,6 @@ if (!empty($_POST)) {
         } else {
             echo "Address doesn't exist";
         }
-
-
-
-    if (!empty($response)) {
-        $latitude = round((float) $response[0]['lat'], 6);
-        $longitude = round((float) $response[0]['lon'], 6);
-
 
     } else {
         // Checkbox is not checked, perform an alternate action or do nothing
@@ -170,16 +154,13 @@ function generateCalendar($month, $year)
 
 $month = isset($_GET['month']) ? intval($_GET['month']) : date('n');
 $year = isset($_GET['year']) ? intval($_GET['year']) : date('Y');
-=======
-}
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-
 $calendarMarkup = generateCalendar($month, $year);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+
 
 <!DOCTYPE html>
 <html lang="nl">

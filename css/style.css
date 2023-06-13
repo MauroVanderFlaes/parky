@@ -1,9 +1,9 @@
 @font-face {
     font-family: lettertype;
     src: url(../fonts/ProximaNova-Regular.woff);
-  }
+}
 
-#map { 
+#map {
     height: 90vh;
     z-index: 0;
 }
@@ -24,9 +24,9 @@
     width: 100px;
     height: 50px;
     z-index: 1000;
-  }
+}
 
-.back{
+.back {
     width: 0px;
     height: 0px;
     position: absolute;
@@ -34,29 +34,29 @@
     left: 4%;
 }
 
-.back2{
+.back2 {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 7%;
     left: 4%;
-    
+
 }
 
 
-.logoLogin{
+.logoLogin {
     position: absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.logoLogin img{
+.logoLogin img {
     width: 152px;
     height: 48px;
 }
 
-.bodyy{
+.bodyy {
     padding: 0px;
     margin: 0px;
 
@@ -64,20 +64,20 @@
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-size: 500px 500px;
-  }
+}
 
 
 
 
 
-.boxLogin{
+.boxLogin {
     margin-top: 319px;
     width: 500px;
     height: 385px;
-            
+
 }
 
-.inputBox{
+.inputBox {
     color: #F2FFFF;
     position: absolute;
     top: 45%;
@@ -88,7 +88,8 @@
     align-items: center;
     flex-direction: column;
 }
-.inputBoxLogin{
+
+.inputBoxLogin {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -100,21 +101,21 @@
 
 
 
-.inputBoxLogin h2{
+.inputBoxLogin h2 {
     color: #F2FFFF;
 }
 
-.inputBox p{
+.inputBox p {
     font-family: lettertype;
     font-weight: 700;
     font-size: 32px;
-    
-    
-    
+
+
+
 
 }
 
-.inputBox p{
+.inputBox p {
     font-size: 20px;
     font-weight: bold;
     margin-top: -10px;
@@ -125,12 +126,12 @@
 
 }
 
-.formBtn{
+.formBtn {
     position: absolute;
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
-    
+
     display: flex;
     width: 500px;
     align-items: center;
@@ -139,12 +140,12 @@
 
 }
 
-.formBtn2{
+.formBtn2 {
     position: absolute;
     left: 50%;
     top: 75%;
     transform: translate(-50%, -50%);
-    
+
     display: flex;
     width: 500px;
     align-items: center;
@@ -153,40 +154,40 @@
 
 }
 
-.formBtn2 input{
+.formBtn2 input {
     color: #F2FFFF;
     font-size: 17px;
 }
 
-.formBtnLogin input{
+.formBtnLogin input {
     color: #F2FFFF;
     font-size: 17px;
 }
 
 
-.formBtn p{
+.formBtn p {
     color: #F2FFFF;
     font-family: lettertype;
     font-size: 15px;
-    
+
 }
 
-.formBtnLogin{
+.formBtnLogin {
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
-    
+
     display: flex;
     width: 500px;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-    
+
 }
 
 
-.inlogBtn3{
+.inlogBtn3 {
     justify-content: center;
     align-items: center;
     height: 56px;
@@ -218,40 +219,40 @@
     text-decoration: none;
     border: none;
     font-family: lettertype;
-    
+
 }
 
-.registerBtn input{
+.registerBtn input {
     justify-content: center;
     align-items: center;
     font-size: 15px;
     font-weight: bold;
     /* css code to remove underline from font */
-    
+
     color: #F2FFFF;
 
 }
 
-.inlogBtn input{
+.inlogBtn input {
     justify-content: center;
     align-items: center;
     font-size: 15px;
     font-weight: bold;
     /* css code to remove underline from font */
-    
+
     color: #F2FFFF;
 
 }
 
-.registerBtn:focus{
+.registerBtn:focus {
     outline: none;
 }
 
-.inlogBtn:focus{
+.inlogBtn:focus {
     outline: none;
 }
 
-.inlogBtn{
+.inlogBtn {
     justify-content: center;
     align-items: center;
     height: 56px;
@@ -265,24 +266,24 @@
     text-decoration: none;
     border: none;
     font-family: lettertype;
-    
+
 }
 
 
 
 
-.inlogBtn3 p{
+.inlogBtn3 p {
     justify-content: center;
     align-items: center;
     font-size: 15px;
     font-weight: bold;
     /* css code to remove underline from font */
-    
+
     color: #F2FFFF;
 
 }
 
-.inlogBtn2{
+.inlogBtn2 {
     justify-content: center;
     align-items: center;
     height: 56px;
@@ -299,30 +300,31 @@
     font-size: 15px;
 }
 
-.inlogBtn2 p{
-    
+.inlogBtn2 p {
+
     font-size: 15px;
     font-weight: bold;
-    
+
     /* css code to remove underline from font */
-    
+
     color: #F2FFFF;
 
 }
-.registerForm{
+
+.registerForm {
     width: 100%;
     height: 400px;
     position: absolute;
     top: 40%;
 }
 
-.registerForm form{
+.registerForm form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.registerForm form input{
+.registerForm form input {
     width: 80%;
     height: 56px;
     border-radius: 10px;
@@ -335,22 +337,22 @@
     margin-top: -15px;
 }
 
-.registerForm form input:focus{
+.registerForm form input:focus {
     outline: none;
 }
 
-.registerForm form p:first-child{
+.registerForm form p:first-child {
     font-family: lettertype;
     margin-left: -300px;
     align-items: left;
-    color:#11211F;
+    color: #11211F;
     font-size: 18px;
 }
 
-.registerEmail{
+.registerEmail {
     margin-left: -340px;
     align-items: left;
-    color:#11211F;
+    color: #11211F;
     font-size: 18px;
     font-family: lettertype;
 
@@ -359,74 +361,75 @@
 
 
 
-.loginForm{
+.loginForm {
     width: 100%;
     height: 300px;
     position: absolute;
     top: 45%;
 }
 
-.loginForm form{
+.loginForm form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.loginForm form input{
+.loginForm form input {
     width: 80%;
     height: 56px;
     border-radius: 10px;
     border: none;
-    
+
     padding-left: 16px;
     font-size: 15px;
     font-weight: bold;
     color: #11211F;
     margin-top: -15px;
     font-family: lettertype;
-    
+
 }
 
-.loginForm form input:focus{
+.loginForm form input:focus {
     outline: none;
 }
 
-.loginForm form p:first-child{
-    
+.loginForm form p:first-child {
+
     margin-left: -305px;
     align-items: left;
-    color:#11211F;
+    color: #11211F;
     font-size: 18px;
     font-family: lettertype;
 }
+
 .pswd {
-    
+
     margin-left: -330px;
     align-items: left;
-    color:#11211F;
+    color: #11211F;
     font-size: 18px;
     font-family: lettertype;
 }
 
 
-.lastLink{
+.lastLink {
     position: absolute;
     top: 99%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0px;
     padding: 0px;
-   
+
 }
 
-.lastLink a{
+.lastLink a {
     color: #11211F;
     text-decoration: underline;
     font-family: lettertype;
 }
 
-.lastLinkRegister{
+.lastLinkRegister {
     position: absolute;
     top: 97%;
     left: 50%;
@@ -436,7 +439,7 @@
     font-family: lettertype;
 }
 
-.lastLinkRegister a{
+.lastLinkRegister a {
     color: #11211F;
     text-decoration: underline;
 }
@@ -460,7 +463,7 @@
 
 }
 
-#boxFilter{
+#boxFilter {
     width: 50px;
     height: 50px;
     top: 5%;
@@ -468,10 +471,10 @@
     position: absolute;
     display: inline-block;
     z-index: 50;
-    
+
 }
 
-#centerIcon{
+#centerIcon {
     width: 70px;
     height: 50px;
     top: 65%;
@@ -481,19 +484,12 @@
     z-index: 50;
 }
 
-#normalNav{
-    /* display: none; */
-}
-
-
-
-
 
 
 
 /* zoekbalk */
 
-.zoekbalk{
+.zoekbalk {
     display: none;
 }
 
@@ -503,7 +499,7 @@
 }
 
 
-#boxSearch-bar{
+#boxSearch-bar {
     width: 50px;
     height: 50px;
     top: 5%;
@@ -514,7 +510,7 @@
 }
 
 
-#closeSearch-bar{
+#closeSearch-bar {
     width: 25px;
     height: 25px;
     top: 6.5%;
@@ -522,10 +518,10 @@
     position: absolute;
     display: inline-block;
     z-index: 50;
-    
+
 }
 
-#searchNav{
+#searchNav {
     display: none;
 }
 
@@ -534,7 +530,7 @@
 /* filterbalk */
 
 
-#searchInputBox{
+#searchInputBox {
     width: 83%;
     height: 50px;
     top: 5%;
@@ -544,21 +540,21 @@
     z-index: 50;
 }
 
-.searchInput{
+.searchInput {
     width: 100%;
     height: 50px;
     border-radius: 50px;
     background-color: #F2FFFF;
 }
 
-#logoSearch{
+#logoSearch {
     display: none;
 }
 
 
 /* instructies */
 
-.feedback{
+.feedback {
     position: absolute;
     display: inline-block;
     /* align text in center */
@@ -569,58 +565,59 @@
     width: 100%;
     background-color: #F2FFFF;
     z-index: 50;
-    
+
     border-radius: 10px 10px 0px 0px;
-    
+
 }
 
-.feedback h2{
-    place-items: center;    
-    
+.feedback h2 {
+    place-items: center;
+
     padding-top: 10px;
     font-size: 20px;
     font-weight: bold;
-    
+
 }
 
-.feedback a{
+.feedback a {
     /* display: none; */
-    
+
     color: #11211F;
 }
 
-#filterNav{
-    
+#filterNav {
+
     /* align items in row */
 
     margin-left: 24px;
     margin-right: 24px;
-    
+
     color: #11211F;
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
-#filterNav h2{
+#filterNav h2 {
     position: relative;
     top: -10px;
 }
 
-#doneStyle{
-    
+#doneStyle {
+
     /* font color */
     color: #22C7A6;
 
-    
-}
-.btnFilters{
-    display: block;
-    
+
 }
 
-.firstDivFilter{
+.btnFilters {
+    display: block;
+
+}
+
+.firstDivFilter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -629,7 +626,7 @@
     margin-top: 20px;
 }
 
-.secondDivFilter{
+.secondDivFilter {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -638,40 +635,41 @@
     margin-top: 20px;
 }
 
-.secondDivFilter p{
+.secondDivFilter p {
     border: 2px solid #22C7A6;
     border-radius: 10px;
     padding: 8px;
 }
 
-.secondDivFilter p:hover{
+.secondDivFilter p:hover {
     background-color: #22C7A6;
     color: #F2FFFF;
 }
 
 /* slider */
-.range{
+.range {
     height: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    
-    
+
+
 }
-.range .sliderValue{
+
+.range .sliderValue {
     position: relative;
     width: 100%;
-    
+
 
 }
 
-.range .sliderValue span{
+.range .sliderValue span {
     position: absolute;
     height: 45px;
     width: 45px;
-    
+
     color: #F2FFFF;
     font-weight: bold;
     top: -40px;
@@ -681,16 +679,17 @@
     line-height: 55px;
     z-index: 2;
 }
-.range .sliderValue span.show{
+
+.range .sliderValue span.show {
     transform: translateX(-50%) scale(1);
 }
 
-.range .sliderValue span:after{
+.range .sliderValue span:after {
     position: absolute;
     content: "";
     height: 45px;
     width: 45px;
-    background: #22C7A6; 
+    background: #22C7A6;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     border: 2px solid #F2FFFF;
@@ -701,7 +700,7 @@
 
 }
 
-.range .field{
+.range .field {
     position: relative;
     display: flex;
     align-items: center;
@@ -709,22 +708,24 @@
     height: 100%;
 
 }
-.range .field .value{
+
+.range .field .value {
     position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: #22C7A6;
 }
-.range .field .value.left{
+
+.range .field .value.left {
     left: -22px;
 }
 
-.range .field .value.right{
+.range .field .value.right {
     right: -43px;
 }
 
-.range .field input{
-    -webkit-appearance: none;
+.range .field input {
+    --webkit-appearance: none;
     height: 3px;
     width: 100%;
     background-color: #11211F;
@@ -733,18 +734,18 @@
     border: none;
 }
 
-.range .field input::-webkit-slider-thumb{
+.range .field input::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
     background: #22C7A6;
     border-radius: 50%;
-    
+
     cursor: pointer;
     margin-top: -2px;
 }
 
-#filterNav .thirdDivFilter{
+#filterNav .thirdDivFilter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -753,11 +754,12 @@
     margin-right: 50px;
     margin-top: -16px;
     /* background-color: #22C7A6; */
-    
-    
-    
+
+
+
 }
-#filterNav .priceDiv{
+
+#filterNav .priceDiv {
     display: flex;
     justify-content: left;
     margin-left: 24px;
@@ -778,17 +780,17 @@
     cursor: pointer;
 }
 
-.greenBtn a{
+.greenBtn a {
     color: #F2FFFF;
 }
 
 .parking {
     display: none;
     width: 100%;
-    
+
 }
 
-.boxImgParking{
+.boxImgParking {
     position: relative;
     display: flex;
     justify-content: center;
@@ -796,8 +798,8 @@
     width: 100%;
 }
 
-.boxImgParking img{
-    
+.boxImgParking img {
+
     width: auto;
 }
 
@@ -808,9 +810,9 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-  }
-  
-  .spots {
+}
+
+.spots {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,33 +824,33 @@
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 20px;
-  }
-  
-  .spot_content {
+}
+
+.spot_content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
-  }
-  
-  .noposts {
+
+}
+
+.noposts {
     color: #F2FFFF;
     margin-bottom: 4vh;
-  }
-  
-  .add-spot {
+}
+
+.add-spot {
     font-size: 50px;
     color: #F2FFFF;
-  }
+}
 
-  .logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-  }
+}
 
-  #logo_zwart {
+#logo_zwart {
     background-image: url("../img/logo3.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -858,9 +860,9 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 5%;
-  }
+}
 
-.options{
+.options {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -873,44 +875,45 @@
     font-weight: 1000;
 }
 
-.option{
+.option {
     color: #D9D9D9;
 }
-.option-active{
+
+.option-active {
     color: #157A66;
     border-bottom: 2px solid #157A66;
 }
 
 
-.title{
+.title {
     position: absolute;
     top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title2{
+.title2 {
     position: absolute;
     top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.title2 h1{
+.title2 h1 {
     font-family: lettertype;
     font-weight: 700;
     font-size: 20px;
     color: #11211F;
 }
 
-.title h1{
+.title h1 {
     font-family: lettertype;
     font-weight: 700;
     font-size: 20px;
     color: #11211F;
 }
 
-.oprit{
+.oprit {
     position: absolute;
     top: 47%;
     left: 50%;
@@ -923,7 +926,7 @@
     align-items: center;
 }
 
-.oprit2{
+.oprit2 {
     position: absolute;
     top: 47%;
     left: 50%;
@@ -934,10 +937,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.oprit3{
+.oprit3 {
     position: absolute;
     top: 38%;
     left: 50%;
@@ -948,43 +951,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
-.oprit2 h1{
+.oprit2 h1 {
     font-family: lettertype;
     font-weight: 700;
     font-size: 24px;
     color: #11211F;
 }
 
-.oprit2 p{
-    
-    width: 480px;   
+.oprit2 p {
+
+    width: 480px;
     height: 480px;
     text-align: center;
 }
 
-.oprit h1{
+.oprit h1 {
     font-family: lettertype;
     font-weight: 700;
     font-size: 24px;
     color: #11211F;
 }
-.oprit p{
-    
-    width: 300px;   
+
+.oprit p {
+
+    width: 300px;
     height: 300px;
     text-align: center;
 }
 
 .boxBtn {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 56px;
     background-color: #22C7A6;
     border-radius: 10px;
@@ -993,33 +997,33 @@
     left: 50%; 
     transform: translate(-50%, -50%);
     width: 80%; */
-   
+
 
     /* margin-top: 150px; */
     text-decoration: none;
     border: none;
-    
+
 }
 
-.boxBtnChoose{
+.boxBtnChoose {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 56px;
     background-color: #22C7A6;
     border-radius: 10px;
-   
+
     width: 80%;
     margin-left: 60px;
-   
+
 
     /* margin-top: 150px; */
     text-decoration: none;
     border: none;
 }
 
-.adres .opritBtn{
+.adres .opritBtn {
     width: 328px;
     justify-content: center;
     align-items: center;
@@ -1029,32 +1033,33 @@
 .btn {
     font-family: lettertype;
     color: #F2FFFF;
-    
-    
+
+
 }
 
-.menu{
+.menu {
     width: 40px;
     height: 40px;
     margin-bottom: 500px;
-    
+
 }
 
-.menu a{
+.menu a {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 67%;
 }
-.menu a:first-child{
+
+.menu a:first-child {
     left: 30%;
 }
 
-.menu a:last-child{
+.menu a:last-child {
     right: 30%;
 }
 
-.active{
+.active {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -1064,7 +1069,7 @@
     left: 48%;
 }
 
-.inactive{
+.inactive {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -1075,7 +1080,7 @@
 }
 
 
-.adres{
+.adres {
     position: absolute;
     top: 58%;
     left: 50%;
@@ -1087,45 +1092,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: -9;
     margin-top: 380px;
 }
 
 
-.adres input{
-    
-           
-    /* border: 2px solid #11211F;
-    border-radius: 10px;
-    height: 100%;
-    width: 100%; */
-    
-}
-
-.boxOpritinfo{
+.boxOpritinfo {
     margin-top: 420px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.adresOprit{
+.adresOprit {
     display: flex;
     flex-direction: column;
     margin-left: -300px;
 }
 
 
-.postcodeOprit{
+.postcodeOprit {
     display: flex;
     flex-direction: row;
     margin-left: -260px;
-   
+
 }
 
-.streetOprit{
+.streetOprit {
     display: flex;
     flex-direction: row;
     margin-left: -200px;
@@ -1135,7 +1130,7 @@
 
 
 
-.boxOpritinfo input{
+.boxOpritinfo input {
     border: 2px solid #11211F;
     border-radius: 10px;
     height: 56px;
@@ -1143,7 +1138,7 @@
     padding-left: 12px;
 }
 
-.boxOpritinfo p{
+.boxOpritinfo p {
     padding-top: 10px;
 }
 
@@ -1152,7 +1147,7 @@
 } */
 
 
-.boxInfo{
+.boxInfo {
     width: 400px;
     /* display: flex;
     flex-direction: row; */
@@ -1163,54 +1158,59 @@
 
 /* sliderOprit page */
 
-.rangeOprit{
+.rangeOprit {
     height: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-right: 30px;
-    
-    
+
+
 }
-.rangeOprit .sliderValueOprit{
+
+.rangeOprit .sliderValueOprit {
     position: relative;
     width: 100%;
-    
+
 
 
 }
 
-.rangeOprit .sliderValueOprit span{
+.rangeOprit .sliderValueOprit span {
     position: absolute;
     height: 45px;
     width: 45px;
-    
+
     color: #F2FFFF;
     font-weight: bold;
     top: -40px;
-    
+
     transform: translateX(-50%) scale(0);
     transform-origin: bottom;
     transition: transform 0.3s ease-in-out;
     line-height: 55px;
     z-index: 2;
 }
-.rangeOprit .sliderValueOprit span.show{
+
+.rangeOprit .sliderValueOprit span.show {
     transform: translateX(-20%) scale(1);
 
+}
 
 .plaats {
     margin-bottom: 25%;
     margin: 0% 10% 25% 10%;
 }
 
-.plaats h1{
+.plaats h1 {
     font-family: lettertype;
     font-weight: 600;
     font-size: 30px;
 }
 
-.accBox, .parkBox, .payBox {
+.accBox,
+.parkBox,
+.payBox {
     background-color: #157A66;
     display: flex;
     flex-direction: column;
@@ -1227,14 +1227,14 @@
 }
 
 
-.rangeOprit .sliderValueOprit span:after{
+.rangeOprit .sliderValueOprit span:after {
     position: absolute;
     content: "";
     height: 45px;
     width: 45px;
-    background: #22C7A6; 
+    background: #22C7A6;
     left: 20%;
-    
+
     transform: translateX(-50%) rotate(45deg);
     border: 2px solid #F2FFFF;
     z-index: -1;
@@ -1243,6 +1243,7 @@
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
 
+}
 
 .gegevens img {
     width: 10%;
@@ -1267,7 +1268,7 @@
 
 
 
-.rangeOprit .fieldOprit{
+.rangeOprit .fieldOprit {
     position: relative;
     display: flex;
     align-items: center;
@@ -1275,22 +1276,24 @@
     height: 100%;
 
 }
-.rangeOprit .fieldOprit .value{
+
+.rangeOprit .fieldOprit .value {
     position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: #22C7A6;
 }
-.rangeOprit .fieldOprit .value.left{
+
+.rangeOprit .fieldOprit .value.left {
     left: -30px;
 }
 
-.rangeOprit .fieldOprit .value.right{
+.rangeOprit .fieldOprit .value.right {
     right: -43px;
 }
 
-.rangeOprit .fieldOprit input{
-    -webkit-appearance: none;
+.rangeOprit .fieldOprit input {
+    --webkit-appearance: none;
     height: 3px;
     width: 100%;
     background-color: #11211F;
@@ -1299,18 +1302,18 @@
     border: none;
 }
 
-.rangeOprit .fieldOprit input::-webkit-slider-thumb{
+.rangeOprit .fieldOprit input::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
     background: #22C7A6;
     border-radius: 50%;
-    
+
     cursor: pointer;
     margin-top: -2px;
 }
 
-.thirdDivFilterOprit{
+.thirdDivFilterOprit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1319,13 +1322,13 @@
     margin-right: 50px;
     margin-top: 16px;
     /* background-color: #22C7A6; */
-    
 
-    
+
+
 }
 
-.tariefCls{
-    
+.tariefCls {
+
     margin-bottom: -20px;
 
 }
@@ -1369,7 +1372,7 @@
 }
 
 
-    
+
 /* 
 
 .calendar td {
@@ -1470,7 +1473,7 @@
     font-weight: 600;
     font-size: 24px;
     color: #F2FFFF;
-    
+
 }
 
 
@@ -1486,7 +1489,7 @@
     justify-content: center;
     align-items: center;
     padding: 4%;
-} 
+}
 
 .logbtn {
     display: flex;
@@ -1500,10 +1503,12 @@
 .calendar td {
     padding: 8px;
 }
+
 .calendar-caption {
     text-align: center;
     padding: 10px;
 }
+
 .calendar-container {
     display: flex;
     flex-direction: column;
@@ -1517,59 +1522,74 @@
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 10px;
-    
-    
+
+
 }
+
 .calendar-navigation {
     text-align: center;
     margin-bottom: 20px;
     margin-right: 40px;
 }
+
 .calendar-navigation a {
     text-decoration: none;
     color: #333;
 }
+
 .calendar-wrapper {
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
+    /* Adjust the width as needed */
     margin: 0 auto;
     padding-left: 30px;
 }
+
 .calendar th {
-    padding: 12px 0; /* Add more vertical padding */
-    width: calc(300px / 7); /* Distribute the width equally among the days */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    text-align: center; /* Center the day labels */
-    margin-right: 8px; /* Add space between the day labels */
+    padding: 12px 0;
+    /* Add more vertical padding */
+    width: calc(300px / 7);
+    /* Distribute the width equally among the days */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+    text-align: center;
+    /* Center the day labels */
+    margin-right: 8px;
+    /* Add space between the day labels */
 }
+
 .calendar th:last-child {
-    margin-right: 0; /* Remove space for the last day label */
+    margin-right: 0;
+    /* Remove space for the last day label */
 }
+
 .calendar thead th:not(:last-child) {
-    border-right: 1px solid #ccc; /* Add a border between the day labels */
+    border-right: 1px solid #ccc;
+    /* Add a border between the day labels */
 }
+
 .selected-day {
     background-color: #11211F;
     color: #F2FFFF;
-    
+
 }
 
 .calendar-day {
-padding: 8px;
-background-color: #22C7A6;
-color: #11211F;
+    padding: 8px;
+    background-color: #22C7A6;
+    color: #11211F;
 }
 
 .calendar-day.selected-day {
-background-color: #11211F;
-color: #F2FFFF;
+    background-color: #11211F;
+    color: #F2FFFF;
 
 }
 
-#selected-days{
+#selected-days {
     margin-top: 24px;
 }
 
-#time1{
+#time1 {
     border: 2px solid #11211F;
     border-radius: 10px;
     height: 56px;
@@ -1577,7 +1597,7 @@ color: #F2FFFF;
     padding-left: 12px;
 }
 
-#time2{
+#time2 {
     border: 2px solid #11211F;
     border-radius: 10px;
     height: 56px;
@@ -1585,7 +1605,7 @@ color: #F2FFFF;
     padding-left: 12px;
 }
 
-.time{
+.time {
     width: 324px;
     display: flex;
     flex-direction: row;
@@ -1595,7 +1615,7 @@ color: #F2FFFF;
     margin-bottom: 24px;
 }
 
-.tijdstip{
+.tijdstip {
     margin-right: 280px;
     margin-bottom: 15px;
 }
@@ -1606,7 +1626,7 @@ color: #F2FFFF;
 }
 
 
-.boxImgs img{
+.boxImgs img {
     margin-top: 4px;
     width: 64px;
     height: 64px;
@@ -1619,11 +1639,11 @@ color: #F2FFFF;
     margin-bottom: 24px;
 }
 
-.voorwaarden{
+.voorwaarden {
     text-decoration: underline;
 }
 
-.textVoorwaarden{
+.textVoorwaarden {
     display: flex;
     flex-direction: row;
     margin-bottom: 24px;
@@ -1631,56 +1651,58 @@ color: #F2FFFF;
     margin-left: 40px;
 }
 
-.textVoorw{
+.textVoorw {
     margin-left: 8px;
+
+}
 
 @media screen and (min-width: 600px) {
     .plaats {
-      margin-bottom: 10%;
+        margin-bottom: 10%;
     }
-  
+
     .accBox,
     .parkBox,
     .payBox {
-      margin: 2% 30%;
-      padding: 2%;
+        margin: 2% 30%;
+        padding: 2%;
     }
-  
+
     .gegevens img {
-      width: 40px;
-      height: 40px;
+        width: 40px;
+        height: 40px;
     }
-  
+
     .accBox h2,
     .payBox h2,
     .parkBox h2 {
-      font-size: 32px;
+        font-size: 32px;
     }
-  
+
     .box h3 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .box p {
-      font-size: 18px;
+        font-size: 18px;
     }
 
     .setBtn {
         padding: 1%;
     }
 
-  }
+}
 
-  
-  .buttons {
+
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 10%;
-  }
-  
-  .settingBtn {
+}
+
+.settingBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1690,7 +1712,7 @@ color: #F2FFFF;
     margin-top: 5vh;
     width: 60%;
     color: #F2FFFF;
-  }
+}
 
 .buttons h1 {
     margin-top: 5%;
