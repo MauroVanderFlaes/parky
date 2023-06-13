@@ -19,10 +19,12 @@ include_once(__DIR__ . "/LoginCheck.php");
 
 <body>
     
+<div class="logo">
     <div id="logo_zwart"></div>
+    </div>
     <div class="options">
-        <a href="">traveller</a>
-        <a href="">parker</a>
+        <a href="traveller.php" class="option">traveller</a>
+        <a href="" class="option-active">parker</a>
     </div>
     <div class="placement">
         <div class="spots">
@@ -34,7 +36,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         <h1 class="noposts">U heeft nog geen parking of oprit toegevoegd.</h1>
         </div>';
             } else {
-                foreach ($spots as $prompt) {
+                foreach ($spots as $spot) {
                     echo "<div class='spot'>";
                     echo "<h1 class='spot-title'>" . $spot['title'] . "</h1>";
                     echo "<p class='spot-text'>" . $spot['text'] . "</p>";
