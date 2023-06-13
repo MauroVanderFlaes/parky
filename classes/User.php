@@ -131,18 +131,24 @@ class User
         return $result['id'];
     }
 
-    public function setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude){
+    public function setLocation($user_Id, $location, $postcode, $city, $latitude, $longitude, $prijs, $selectedDaysOutput, $selectedImage, $soortParking,$startUur, $eindUur){
         $conn = Db::getInstance();
-        $statement = $conn->prepare("INSERT INTO locations (user_id, location, postcode, city, latitude, longitude) values (:user_id, :location, :postcode, :city, :latitude, :longitude)");
+        $statement = $conn->prepare("INSERT INTO locations (user_id, location, postcode, city, latitude, longitude, prijs, days, grootte_parking, soort_parking, startUur, eindUur) VALUES (:user_id, :location, :postcode, :city, :latitude, :longitude, :prijs, :days, :grootte_parking, :soort_parking, :startUur, :eindUur)");
         $statement->bindValue(":user_id", $user_Id);
         $statement->bindValue(":location", $location);
         $statement->bindValue(":postcode", $postcode);
         $statement->bindValue(":city", $city);
         $statement->bindValue(":latitude", $latitude);
         $statement->bindValue(":longitude", $longitude);
+        $statement->bindValue(":prijs", $prijs);
+        $statement->bindValue(":days", $selectedDaysOutput);
+        $statement->bindValue(":grootte_parking", $selectedImage);
+        $statement->bindValue(":soort_parking", $soortParking);
+        $statement->bindValue(":startUur", $startUur);
+        $statement->bindValue(":eindUur", $eindUur);
         $result = $statement->execute();
-
     }
+    
 
 
     /**
@@ -160,6 +166,27 @@ class User
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
+
+
+
+    // public function updatePrice($prijs){
+        
+    //     $conn = Db::getInstance();
+    //     $statement = $conn->prepare("UPDATE locations SET prijs = :prijs WHERE user_id = :user_id");
+    //     $statement->bindValue(":prijs", $prijs);
+    //     $statement->bindValue(":user_id", $this->user_id);
+    //     $result = $statement->execute();
+    // }
+
+
+    // public function setAvailability($user_Id, $selectedDaysOutput){
+    //     echo "test";
+    //     $conn = Db::getInstance();
+    //     $statement = $conn->prepare("INSERT INTO locations (user_id, days) values (:user_id, :days)");
+    //     $statement->bindValue(":user_id", $user_Id);
+    //     $statement->bindValue(":days", $selectedDaysOutput);
+    //     $result = $statement->execute();
+    // }
 
 
 }
