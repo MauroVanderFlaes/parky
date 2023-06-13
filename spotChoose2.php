@@ -40,8 +40,13 @@ include_once(__DIR__ . "/LoginCheck.php");
         
     </div>
     
-    <div class="boxBtn">
+    <!-- <div class="boxBtn">
         <a class="btn" href="">bedrijfsparking kiezen</a>
+        
+    </div> -->
+
+    <div class="boxBtnChoose">
+        <a class="btn" href="bedrijfsparkingInfo.php">bedrijfsparking kiezen</a>
         
     </div>
 
