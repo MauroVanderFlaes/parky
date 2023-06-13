@@ -894,10 +894,24 @@
     transform: translate(-50%, -50%);
 }
 
+.title2{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title2 h1{
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 20px;
+    color: #11211F;
+}
+
 .title h1{
     font-family: lettertype;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: #11211F;
 }
 
