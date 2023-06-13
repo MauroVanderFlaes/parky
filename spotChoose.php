@@ -39,7 +39,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         <a href="spotChoose2.php"><img src="img/arrowR.png" alt="r"></a>
     </div>
     
-    <div class="boxBtn">
+    <div class="boxBtnChoose">
         <a class="btn" href="opritInfo.php">oprit kiezen</a>
         
     </div>
