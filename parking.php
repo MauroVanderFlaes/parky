@@ -4,6 +4,19 @@ include_once(__DIR__ . "/bootstrap.php");
 include_once(__DIR__ . "/LoginCheck.php");
 
 
+
+
+$amountUser = new User();
+$amountUser->getLocationCount($_SESSION['user_id']);
+// echo $amountUser->getLocationCount($_SESSION['user_id']);
+if($amountUser->getLocationCount($_SESSION['user_id']) >= 1){
+    header("Location: parkingOverzicht.php");
+} 
+// else{
+//     header("Location: parking.php");
+// }
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 
