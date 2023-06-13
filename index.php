@@ -153,7 +153,6 @@ $getLocation = User::getCoordinates();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.AnimatedMarker/2.1.0/AnimatedMarker.js"></script>
   <script src="script.js"></script>
 
-
   <script>
     //map setup: coordinates and zoom level 
     let map = L.map('map').setView([51.0270892, 4.480158], 15);
@@ -288,10 +287,6 @@ $getLocation = User::getCoordinates();
       console.error('Geolocation API not available');
     }
 
-
-
-
-
     document.querySelector("#filterNav").style.display = "none";
 
     document.querySelector("#boxSearch").addEventListener("click", function(e) {
@@ -316,8 +311,6 @@ $getLocation = User::getCoordinates();
 
 
     });
-
-
     let active = 0;
 
     document.querySelector("#boxFilter").addEventListener("click", function(e) {
@@ -394,8 +387,6 @@ $getLocation = User::getCoordinates();
       updateLocation();
     });
   </script>
-
-
 </body>
 
 </html>
