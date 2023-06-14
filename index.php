@@ -1,16 +1,31 @@
 <?php
 
 include_once(__DIR__ . "/bootstrap.php");
-// load logincheck 
+// load logincheck
 include_once(__DIR__ . "/LoginCheck.php");
 
 
 $user = new User();
 
-$getLocation = User::getCoordinates();
+
+
+//foute manier
+// $getLocation = User::getCoordinates();
+
+//juiste manier
+$getLocation = $user->getLocationInfo();
+
+
+
+
 // var_dump($getLocation);
 // var_dump($latitude);
 // var_dump($longitude);
+
+
+// $info = $user->getLocationInfo();
+// var_dump($info);
+
 
 
 
@@ -90,11 +105,20 @@ $getLocation = User::getCoordinates();
         </div>
       </div>
 
+
       <div class="parking">
+        <div class="balk"><img src="img/balk.png" alt=""></div>
         <div class="boxImgParking">
           <img src="img/parking1.png" alt="">
         </div>
-        <p>parking: douaneplein - Mechelen</p>
+        <p class="adresParking">adress straat</p>
+        <div class="boxBtnParking">
+          <a href="">parkeersessie nu starten</a>
+        </div>
+
+        <div class="boxBtnParking2">
+          <a href="">reserveren</a>
+        </div>
 
       </div>
 
@@ -190,10 +214,68 @@ $getLocation = User::getCoordinates();
 
     //make foreach loop to get all the coordinates from the database and make a marker for each coordinate
     <?php foreach ($getLocation as $location) : ?>
-      var marker = L.marker([<?php echo $location['latitude']; ?>, <?php echo $location['longitude']; ?>], {
-        icon: markerIcon
-      }).addTo(map);
-    <?php endforeach; ?>
+  var marker = L.marker([<?php echo $location['latitude']; ?>, <?php echo $location['longitude']; ?>], {
+    icon: markerIcon
+  }).addTo(map);
+
+  marker.addEventListener('click', function(){
+    // Get the info from the database based on the clicked marker
+    var locationData = <?php echo json_encode($location); ?>;
+    var address = locationData['location']; // Update this with the correct field name from your database
+
+    // Update the HTML with the retrieved data
+    document.querySelector(".adresParking").innerHTML = address;
+
+    document.querySelector(".feedback").style.bottom = "80px";
+    document.querySelector(".feedback").style.height = "400px";
+    document.querySelector("#filterNav").style.display = "flex";
+    document.querySelector("#noSteps").style.display = "none";
+    document.querySelector("#filter").style.display = "none";
+    document.querySelector(".parking").style.display = "block";
+    document.querySelector(".feedbackFilter").style.display = "none";
+
+
+    //on another click on this same marker, the feedback will disappear
+    document.querySelector(".balk").addEventListener('click', function(){
+      document.querySelector(".feedback").style.bottom = "80px";
+      document.querySelector(".feedback").style.height = "80px";
+      document.querySelector("#filterNav").style.display = "none";
+      document.querySelector("#noSteps").style.display = "block";
+      document.querySelector(".parking").style.display = "none";
+      document.querySelector(".feedbackFilter").style.display = "none";
+    });
+    
+  });
+<?php endforeach; ?>
+
+
+
+
+      // marker.on('click', function(e) {
+
+      //   console.log("test");
+      //   document.querySelector(".feedback").style.bottom = "80px";
+      //   document.querySelector(".feedback").style.height = "306px";
+      //   document.querySelector("#filterNav").style.display = "flex";
+      //   document.querySelector("#noSteps").style.display = "none";
+      //   document.querySelector("#filter").style.display = "none";
+      //   document.querySelector(".parking").style.display = "block";
+      //   document.querySelector(".feedbackFilter").style.display = "none";
+
+      //   //on another click on this same marker, the feedback will disappear
+      //   marker.on('click', function(e) {
+      //     document.querySelector(".feedback").style.bottom = "80px";
+      //     document.querySelector(".feedback").style.height = "80px";
+      //     document.querySelector("#filterNav").style.display = "none";
+      //     document.querySelector("#noSteps").style.display = "block";
+      //     document.querySelector(".parking").style.display = "none";
+      //     document.querySelector(".feedbackFilter").style.display = "none";
+      //   });
+
+
+      // });
+  
+
 
 
 
@@ -369,15 +451,11 @@ $getLocation = User::getCoordinates();
 
 
 
-    marker.on('click', function(e) {
-      document.querySelector(".feedback").style.bottom = "80px";
-      document.querySelector(".feedback").style.height = "306px";
-      document.querySelector("#filterNav").style.display = "flex";
-      document.querySelector("#noSteps").style.display = "none";
-      document.querySelector("#filter").style.display = "none";
-      document.querySelector(".parking").style.display = "block";
-      document.querySelector(".feedbackFilter").style.display = "none";
-    });
+
+
+
+
+
 
 
 
