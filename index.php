@@ -113,7 +113,7 @@ $getLocation = $user->getLocationInfo();
         </div>
         <p class="adresParking">adress straat</p>
         <div class="boxBtnParking">
-          <a href="">parkeersessie nu starten</a>
+          <a href="parkeersesssieStart.php">parkeersessie nu starten</a>
         </div>
 
         <div class="boxBtnParking2">
@@ -242,7 +242,7 @@ $getLocation = $user->getLocationInfo();
       document.querySelector("#filterNav").style.display = "none";
       document.querySelector("#noSteps").style.display = "block";
       document.querySelector(".parking").style.display = "none";
-      document.querySelector(".feedbackFilter").style.display = "none";
+      document.querySelector(".feedbackFilter").style.display = "block";
     });
     
   });
