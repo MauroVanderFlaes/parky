@@ -3,6 +3,16 @@
     src: url(../fonts/ProximaNova-Regular.woff);
 }
 
+h1, h2, h3 {
+    font-family: lettertype;
+    font-weight: 700;
+}
+
+p {
+    font-family: lettertype;
+    font-weight: 400;
+}
+
 #map {
     height: 90vh;
     z-index: 0;
@@ -23,7 +33,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 7%;
+    top: 4%;
     left: 4%;
 
 }
@@ -58,21 +68,43 @@
     width: 60%; /* Nieuwe regel */
 }
 
+.btns input {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F2FFFF;
+    padding: 4% 0%;
+    background-color: #157A66;
+    border-radius: 10px;
+    width: 60%; /* Nieuwe regel */
+    margin: 5% 0%;
+}
+
 @media screen and (min-width: 600px) {
+    body {
+        padding: 0;
+    }
     .log {
         background-image: url(../img/bg-desktop.png);
         background-position: center;
-        margin-top: 17vh;
+        margin-top: 8vh;
         background-size: cover;
     }
 
     .inputBox {
         display: flex;
+        margin: 0;
     }
 
     .btns a {
-        padding: 2% 0%;
+        padding: 1.5% 0%;
         width: 30%;
+    }
+    .btns {
+        padding: 0;
     }
 }
 
@@ -84,21 +116,12 @@
     padding-bottom: 10vh;
 }
 
-.inputBoxLogin {
-    margin: 0px;
-    padding: 0px;
-
-}
 
 .inputBox h2 {
     font-family: lettertype;
     color: #F2FFFF;
 }
 
-.inputBoxLogin h2 {
-    font-family: lettertype;
-    color: #F2FFFF;
-}
 
 .inputBox p {
     font-family: lettertype;
@@ -130,6 +153,8 @@
     flex-direction: column;
 
 }
+
+
 
 .formBtn2 input {
     color: #F2FFFF;
@@ -194,8 +219,6 @@
     align-items: center;
     font-size: 15px;
     font-weight: bold;
-    /* css code to remove underline from font */
-
     color: #F2FFFF;
 
 }
@@ -219,7 +242,6 @@
     font-family: lettertype;
     font-weight: 700;
     font-size: 15px;
-
 }
 
 
@@ -259,143 +281,24 @@
 
 }
 
-.registerForm {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: 40%;
-}
-
-.registerForm form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.registerForm form input {
-    width: 80%;
-    height: 56px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 16px;
-    font-family: lettertype;
-    font-size: 15px;
-    font-weight: bold;
-    color: #11211F;
-    margin-top: -15px;
-}
-
-.registerForm form input:focus {
-    outline: none;
-}
-
-.registerForm form p:first-child {
-    font-family: lettertype;
-    margin-left: -300px;
-    align-items: left;
-    color: #11211F;
-    font-size: 18px;
-}
-
-.registerEmail {
-    margin-left: -340px;
-    align-items: left;
-    color: #11211F;
-    font-size: 18px;
-    font-family: lettertype;
-
-}
-
-
-
-
 .loginForm {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 45%;
-}
-
-.loginForm form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+    flex-direction: column;
 }
 
 .loginForm form input {
-    width: 80%;
-    height: 56px;
-    border-radius: 10px;
+    padding: 2vh 4vw;
     border: none;
-
-    padding-left: 16px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #11211F;
-    margin-top: -15px;
-    font-family: lettertype;
-
+    border-radius: 10px;
 }
 
-.loginForm form input:focus {
-    outline: none;
-}
-
-.loginForm form p:first-child {
-
-    margin-left: -305px;
-    align-items: left;
-    color: #11211F;
-    font-size: 18px;
-    font-family: lettertype;
-}
-
-.pswd {
-
-    margin-left: -330px;
-    align-items: left;
-    color: #11211F;
-    font-size: 18px;
-    font-family: lettertype;
-}
-
-
-.lastLink {
-    position: absolute;
-    top: 99%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    padding: 0px;
-
-}
 
 .lastLink a {
-    color: #11211F;
-    text-decoration: underline;
+    color: #F2FFFF;
     font-family: lettertype;
 }
-
-.lastLinkRegister {
-    position: absolute;
-    top: 97%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    padding: 0px;
-    font-family: lettertype;
-}
-
-.lastLinkRegister a {
-    color: #11211F;
-    text-decoration: underline;
-}
-
-
-
-
-
 
 
 
@@ -759,7 +662,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-top: 10vh;
 }
 
 .spots {
@@ -812,17 +715,45 @@
     margin-top: 5%;
 }
 
+#logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    z-index: 999;
+}
+
 .options {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    position: absolute;
     gap: 10vw;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: lettertype;
     font-weight: 1000;
+    margin-top: 2vh;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.opritcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oprit img {
+    width: 40%;
 }
 
 .option {
@@ -834,20 +765,6 @@
     border-bottom: 2px solid #157A66;
 }
 
-
-.title {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.title2 {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .title2 h1 {
     font-family: lettertype;
@@ -863,26 +780,23 @@
     color: #11211F;
 }
 
+.opritcontainer h1 {
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 20px;
+    color: #11211F;
+    margin-top: 2vh;
+}
+
 .oprit {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
 }
 
 .oprit2 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -891,19 +805,44 @@
 }
 
 .oprit3 {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
 }
 
+.oprit3 img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.boxImgParking {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+    z-index: -5;
+}
+
+
+
+.boxImgParking img {
+
+    width: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+.balk{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+
+}
 
 .oprit2 h1 {
     font-family: lettertype;
@@ -928,8 +867,6 @@
 
 .oprit p {
 
-    width: 300px;
-    height: 300px;
     text-align: center;
     
 }
@@ -966,8 +903,6 @@
     border-radius: 10px;
 
     width: 80%;
-    margin-left: 60px;
-
 
     /* margin-top: 150px; */
     text-decoration: none;
@@ -989,45 +924,29 @@
 }
 
 .menu {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 400px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
 }
 
-.menu a {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 67%;
+.arrow {
+    width: 20%;
 }
 
-.menu a:first-child {
-    left: 30%;
-}
-
-.menu a:last-child {
-    right: 30%;
-}
 
 .active {
     width: 15px;
     height: 15px;
-    position: absolute;
-    top: 69%;
     background-color: #11211F;
     border-radius: 50%;
-    left: 48%;
 }
 
 .inactive {
     width: 15px;
     height: 15px;
-    position: absolute;
-    top: 69%;
     background-color: #D9D9D9;
     border-radius: 50%;
-    left: 52%;
 }
 
 
@@ -1709,8 +1628,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 5% 0%;
-    padding: 5%;
     border-radius: 25px;
 }
 
@@ -1739,8 +1656,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 5% 0%;
-    padding: 5%;
     border-radius: 25px;
 }
 
@@ -1786,7 +1701,7 @@
     border-radius: 10px;
     margin-left: 44px;
     margin-right: 44px;
-    margin-top: 110px;
+    margin-top: 20px;
 }
 
 .imgOverzicht{
@@ -1837,7 +1752,9 @@
     margin-left: 120px;
 }
 
-
+.oprit {
+    margin: 2%;
+}
 
 .textBox h2{
     font-family: lettertype;

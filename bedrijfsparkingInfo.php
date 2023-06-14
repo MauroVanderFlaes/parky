@@ -173,7 +173,7 @@ $calendarMarkup = generateCalendar($month, $year);
         <a href="traveller.php" class="option">traveller</a>
         <a href="parking.php" class="option-active">parker</a>
     </div>
-    <div class="title2">
+    <div class="title2  flex justify-center mt-5">
         <h1>bedrijfsparking informatie</h1>
     </div>
     <div class="oprit3">
@@ -314,7 +314,7 @@ $calendarMarkup = generateCalendar($month, $year);
 </div>
     
 
-    <?php include 'nav.php'; ?>
+    <?php include 'nav2.php'; ?>
 
     <script>
 

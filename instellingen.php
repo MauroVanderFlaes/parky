@@ -16,7 +16,7 @@
     <div class="logo">
         <div id="logo_zwart"></div>
     </div>
-    
+    <a class="back2" href="profile.php"><img src="img/back.png" alt=""></a>
     <div class="buttons">
     <h1>instellingen</h1>
         <a href="av.php" class="settingBtn">algemene voorwaarden</a>
@@ -26,7 +26,7 @@
         <a href="" class="settingBtn">tutorial van de app</a>
     </div>
 
-    <?php include_once('nav.php'); ?>
+    <?php include_once('nav3.php'); ?>
 </body>
 
 </html>
