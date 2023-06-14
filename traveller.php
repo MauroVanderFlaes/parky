@@ -48,12 +48,12 @@ include_once(__DIR__ . "/LoginCheck.php");
     <div class="sessie-end">
         <h1>archief</h1>
         <div class="sessie-content">
-            <a href="index.php" class="add-spot">&plus;</a>
+            <a href="archief_empty.php" class="add-spot">&plus;</a>
             <h2 class="noposts">je hebt nog niet geparkeerd. Er is geen archief</h2>
         </div>
 
     </div>
-
+    <a href="traveller_filled.php">traveller filled</a>
     </div>
 
     

@@ -181,15 +181,11 @@ $calendarMarkup = generateCalendar($month, $year);
         <a href="traveller.php" class="option">traveller</a>
         <a href="parking.php" class="option-active">parker</a>
     </div>
-    <div class="title">
+    <div class="title flex justify-center mt-5">
         <h1>oprit informatie</h1>
     </div>
     <div class="oprit3">
         <img src="img/parkingOprit.png" alt="foto">
-
-
-
-
     </div>
 
     <div><?php if(isset($errorCheckbox)): ?></div>
@@ -428,7 +424,6 @@ function displaySelectedDays() {
     </script>
 </body>
 
-</body>
 <script src="script.js"></script>
 
 

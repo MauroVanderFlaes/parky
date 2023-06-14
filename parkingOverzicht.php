@@ -9,8 +9,10 @@ $info = $user->getInfo($user_id);
 
 
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,49 +20,48 @@ $info = $user->getInfo($user_id);
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-<div class="logo">
-    <div id="logo_zwart"></div>
+    <div class="logo">
+        <div id="logo_zwart"></div>
     </div>
     <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
     <div class="options">
         <a href="traveller.php" class="option">traveller</a>
         <a href="parking.php" class="option-active">parker</a>
     </div>
-    <div class="title">
-        <h1>mijn parking</h1>
-    </div>
+    <div>
+        <div class="title flex justify-center mt-5">
+            <h1>mijn parking</h1>
+        </div>
+        <div class="backgroundParking">
+            <div class="overzichtBox">
+                <h1>Oprit</h1>
+                <div class="imgOverzicht">
+                    <a href=""><img src="img/edit.png" alt=""></a>
 
-
-
-    <div class="backgroundParking">
-        <div class="overzichtBox">
-            <h1>Oprit</h1>
-            <div  class="imgOverzicht">
-                <a href=""><img src="img/edit.png" alt=""></a>
+                </div>
 
             </div>
-            
-        </div>
-        
-        <div class="opritLijn">
-            <img src="img/opritLijn.png" alt="">
-        </div>
-    </div>
 
-
-    <div class="textBox">
-        <div class="boxAdres">
-            <h2>adres</h2>
-            <p><?php echo $info['location']; ?></p>
+            <div class="opritLijn">
+                <img src="img/opritLijn.png" alt="">
+            </div>
         </div>
 
-        <div class="boxNummer">
-            <h2>postcode</h2>
-            <p><?php echo $info['postcode']; ?></p>
 
+        <div class="textBox">
+            <div class="boxAdres">
+                <h2>adres</h2>
+                <p><?php echo $info['location']; ?></p>
+            </div>
+
+            <div class="boxNummer">
+                <h2>postcode</h2>
+                <p><?php echo $info['postcode']; ?></p>
+
+            </div>
         </div>
-    </div>
 
         <div class="textBox2">
 
@@ -68,29 +69,32 @@ $info = $user->getInfo($user_id);
                 <h2>status</h2>
                 <p>open, bezet, gereserveerd</p>
             </div>
-    
+
             <div class="boxNummer2">
                 <h2>prijs</h2>
                 <p><?php echo $info['prijs']; ?></p>
-    
+
             </div>
         </div>
 
         <div class="btnOverzicht">
             <a href="">gereserveerde parkeersessies bekijken</a>
-            
+
         </div>
 
-       <div class="btnOverzicht2">
+        <div class="btnOverzicht2">
             <a href="">oprit nu beschikbaar maken</a>
-            
-        </div> 
+
+        </div>
 
         <div class="remove">
-            <a href="removeOprit.php" >parkeerplaats weghalen</a>
+            <a href="removeOprit.php">parkeerplaats weghalen</a>
         </div>
+    </div>
 
-        <?php include 'nav.php'; ?>
+
+    <?php include 'nav.php'; ?>
 
 </body>
+
 </html>

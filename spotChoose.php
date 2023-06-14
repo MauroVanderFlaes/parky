@@ -3,7 +3,8 @@
 include_once(__DIR__ . "/bootstrap.php");
 include_once(__DIR__ . "/LoginCheck.php");
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,33 +19,37 @@ include_once(__DIR__ . "/LoginCheck.php");
 </head>
 
 <body>
-<div class="logo">
-    <div id="logo_zwart"></div>
+    <div class="logo">
+        <div id="logo_zwart"></div>
     </div>
-    <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
-    <div class="options">
-        <a href="traveller.php" class="option">traveller</a>
-        <a href="parking.php" class="option-active">parker</a>
+    <div class="con">
+        <a class="back2" href="parking.php"><img src="img/back.png" alt=""></a>
+        <div class="options">
+            <a href="traveller.php" class="option">traveller</a>
+            <a href="parking.php" class="option-active">parker</a>
+        </div>
+        <div class="opritcontainer">
+            <h1>parking toevoegen</h1>
+            <div class="oprit">
+                <img src="img/parkingOprit.png" alt="foto">
+                <h1>oprit</h1>
+                <p>Je eigen oprit beschikbaar stellen voor travellers.</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="active"><a href=""></a></div>
+            <div class="inactive"><a href="spotChoose2.php"></a></div>
+            <a href="spotChoose2.php" class="arrow"><img src="img/arrowR.png" alt="r"></a>
+        </div>
+
+        <div class="boxBtnChoose">
+            <a class="btn" href="opritInfo.php">oprit kiezen</a>
+
+        </div>
+
     </div>
-    <div class="title">
-        <h1>parking toevoegen</h1>
     </div>
-    <div class="oprit">
-        <img src="img/parkingOprit.png" alt="foto">
-        <h1>oprit</h1>
-        <p>Je eigen oprit beschikbaar stellen voor travellers.</p>
-    </div>
-    <div class="menu">
-        
-        <div class="active"><a href=""></a></div>
-        <div class="inactive"><a href="spotChoose2.php"></a></div>
-        <a href="spotChoose2.php"><img src="img/arrowR.png" alt="r"></a>
-    </div>
-    
-    <div class="boxBtnChoose">
-        <a class="btn" href="opritInfo.php">oprit kiezen</a>
-        
-    </div>
+
 
 
     <?php include 'nav.php'; ?>

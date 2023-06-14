@@ -23,6 +23,7 @@ include_once(__DIR__ . "/LoginCheck.php");
     <div class="logo">
         <div id="logo_zwart"></div>
     </div>
+    <a class="back2" href="traveller.php"><img src="img/back.png" alt=""></a>
     <div class="options">
         <a href="traveller.php" class="option-active">traveller</a>
         <a href="parking.php" class="option">parker</a>
@@ -31,6 +32,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         <div class="archief">
             <h1>archief</h1>
             <p>je hebt nog niet geparkeerd. er is dus geen archief.</p>
+            <a href="archief_filled.php">archief bekijken</a>
         </div>
 
     </div>

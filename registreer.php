@@ -77,7 +77,7 @@ if (isset($_POST['register'])) {
                         <input class="inlogBtn" type="submit" value="registreren" name="register" id=""></input>
                     </div>
                     <div class="lastLink">
-                        <a href="registreer.php">Al een account? log hier in</a>
+                        <a href="login.php">Al een account? log hier in</a>
                     </div>
 
                 </form>

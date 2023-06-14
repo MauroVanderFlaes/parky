@@ -33,7 +33,7 @@ p {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 7%;
+    top: 4%;
     left: 4%;
 
 }
@@ -153,6 +153,8 @@ p {
     flex-direction: column;
 
 }
+
+
 
 .formBtn2 input {
     color: #F2FFFF;
@@ -660,7 +662,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-top: 10vh;
 }
 
 .spots {
@@ -729,13 +731,29 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    position: absolute;
     gap: 10vw;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: lettertype;
     font-weight: 1000;
+    margin-top: 2vh;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.opritcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oprit img {
+    width: 40%;
 }
 
 .option {
@@ -747,20 +765,6 @@ p {
     border-bottom: 2px solid #157A66;
 }
 
-
-.title {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.title2 {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .title2 h1 {
     font-family: lettertype;
@@ -776,26 +780,23 @@ p {
     color: #11211F;
 }
 
+.opritcontainer h1 {
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 20px;
+    color: #11211F;
+    margin-top: 2vh;
+}
+
 .oprit {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
 }
 
 .oprit2 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -804,17 +805,14 @@ p {
 }
 
 .oprit3 {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
 
+.oprit3 img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -841,8 +839,6 @@ p {
 
 .oprit p {
 
-    width: 300px;
-    height: 300px;
     text-align: center;
     
 }
@@ -879,8 +875,6 @@ p {
     border-radius: 10px;
 
     width: 80%;
-    margin-left: 60px;
-
 
     /* margin-top: 150px; */
     text-decoration: none;
@@ -902,45 +896,29 @@ p {
 }
 
 .menu {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 400px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
 }
 
-.menu a {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 67%;
+.arrow {
+    width: 20%;
 }
 
-.menu a:first-child {
-    left: 30%;
-}
-
-.menu a:last-child {
-    right: 30%;
-}
 
 .active {
     width: 15px;
     height: 15px;
-    position: absolute;
-    top: 69%;
     background-color: #11211F;
     border-radius: 50%;
-    left: 48%;
 }
 
 .inactive {
     width: 15px;
     height: 15px;
-    position: absolute;
-    top: 69%;
     background-color: #D9D9D9;
     border-radius: 50%;
-    left: 52%;
 }
 
 
@@ -1622,8 +1600,6 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 5% 0%;
-    padding: 5%;
     border-radius: 25px;
 }
 
@@ -1652,8 +1628,6 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 5% 0%;
-    padding: 5%;
     border-radius: 25px;
 }
 
@@ -1699,7 +1673,7 @@ p {
     border-radius: 10px;
     margin-left: 44px;
     margin-right: 44px;
-    margin-top: 110px;
+    margin-top: 20px;
 }
 
 .imgOverzicht{
@@ -1750,7 +1724,9 @@ p {
     margin-left: 120px;
 }
 
-
+.oprit {
+    margin: 2%;
+}
 
 .textBox h2{
     font-family: lettertype;

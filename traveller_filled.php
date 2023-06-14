@@ -57,7 +57,7 @@ include_once(__DIR__ . "/LoginCheck.php");
                 <img src="img/archief.png" alt="" style="width: 90%; padding: 10% 0%">
             </div>
             <div class="info">
-                <a href="archief_empty.php">meer info bekijken</a>
+                <a href="archief_filled.php">meer info bekijken</a>
             </div>
 
         </div>

@@ -124,7 +124,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         </div>
 
         <div class="logBtn">
-            <a href="index.html" class="logbtn">Uitloggen</a>
+            <a href="logout.php" class="logbtn">Uitloggen</a>
         </div>
     </div>
 
