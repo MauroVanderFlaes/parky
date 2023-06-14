@@ -4,8 +4,10 @@
 
 
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +16,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body class="bodyy">
-    
 
-        <div class="logoLogin"><img src="img/logo3.png" alt="foto"></div>
+<body>
+    <div class="logo">
+        <div id="logo_zwart"></div>
+    </div>
+    <div class="log">
         <div class="boxLogin">
             <div class="inputBox">
                 <h2>welkom!</h2>
                 <p>maak een keuze</p>
             </div>
-            <div class="formBtn">
-                <a class="inlogBtn3" href="login.php"><p>inloggen</p></a>
+            <div class="btns">
+                <a href="login.php" class="btn">login</a>
                 <p>of</p>
-                <a class="inlogBtn2" href="registreer.php">registreren</a>
+                <a href="register.php" class="btn">register</a>
             </div>
-    
-            
+
         </div>
-    
+    </div>
 </body>
+
 </html>

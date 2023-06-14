@@ -11,21 +11,6 @@
 
 /* nieuwe balk */
 
-
-#logo {
-    /* background-image: url("./img/logo.png"); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 50px;
-    z-index: 1000;
-}
-
 .back {
     width: 0px;
     height: 0px;
@@ -43,65 +28,75 @@
 
 }
 
-
-.logoLogin {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.logoLogin img {
-    width: 152px;
-    height: 48px;
-}
-
-.bodyy {
-    padding: 0px;
-    margin: 0px;
-
-    background-image: url("../img/bgWorks.png");
+.log {
+    background-image: url(../img/bgWorks.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: 500px 500px;
+    margin-top: 18vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
 }
 
-
-
-
-
-.boxLogin {
-    margin-top: 319px;
-    width: 500px;
-    height: 385px;
-
-}
-
-.inputBox {
-    color: #F2FFFF;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0px;
+.btns {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.btns a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: lettertype;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F2FFFF;
+    padding: 4% 0%;
+    background-color: #157A66;
+    border-radius: 10px;
+    width: 60%; /* Nieuwe regel */
+}
+
+@media screen and (min-width: 600px) {
+    .log {
+        background-image: url(../img/bg-desktop.png);
+        background-position: center;
+        margin-top: 17vh;
+        background-size: cover;
+    }
+
+    .inputBox {
+        display: flex;
+    }
+
+    .btns a {
+        padding: 2% 0%;
+        width: 30%;
+    }
+}
+
+.inputBox {
+    color: #F2FFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+
 .inputBoxLogin {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin: 0px;
     padding: 0px;
 
 }
 
-
+.inputBox h2 {
+    font-family: lettertype;
+    color: #F2FFFF;
+}
 
 .inputBoxLogin h2 {
+    font-family: lettertype;
     color: #F2FFFF;
 }
 
@@ -118,39 +113,21 @@
 .inputBox p {
     font-size: 20px;
     font-weight: bold;
-    margin-top: -10px;
-    width: 150px;
-    position: relative;
-    left: 45%;
-    transform: translate(-50%, -50%);
 
 }
 
 .formBtn {
-    position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%, -50%);
-
     display: flex;
-    width: 500px;
     align-items: center;
     flex-direction: column;
-    margin-top: 112px;
 
 }
 
 .formBtn2 {
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%, -50%);
 
     display: flex;
-    width: 500px;
     align-items: center;
     flex-direction: column;
-    margin-top: 112px;
 
 }
 
@@ -172,37 +149,16 @@
 
 }
 
-.formBtnLogin {
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    width: 500px;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-
-}
-
-
 .inlogBtn3 {
-    justify-content: center;
-    align-items: center;
-    height: 56px;
     background-color: #157A66;
     border-radius: 10px;
     color: #F2FFFF;
     display: flex;
-    width: 80%;
-    margin-left: 32px;
-    margin-right: 32px;
     text-decoration: none;
     font-family: lettertype;
     font-weight: 700;
     font-size: 15px;
-
+    padding: 2% 30%;
 }
 
 .registerBtn {
@@ -255,17 +211,14 @@
 .inlogBtn {
     justify-content: center;
     align-items: center;
-    height: 56px;
     background-color: #157A66;
     border-radius: 10px;
-    color: red;
+    color: #F2FFFF;
     display: flex;
-    width: 80%;
-    margin-left: 32px;
-    margin-right: 32px;
     text-decoration: none;
-    border: none;
     font-family: lettertype;
+    font-weight: 700;
+    font-size: 15px;
 
 }
 
@@ -284,20 +237,15 @@
 }
 
 .inlogBtn2 {
-    justify-content: center;
-    align-items: center;
-    height: 56px;
     background-color: #157A66;
     border-radius: 10px;
     color: #F2FFFF;
     display: flex;
-    width: 80%;
-    margin-left: 32px;
-    margin-right: 32px;
     text-decoration: none;
     font-family: lettertype;
     font-weight: 700;
     font-size: 15px;
+    padding: 4% 30%;
 }
 
 .inlogBtn2 p {
