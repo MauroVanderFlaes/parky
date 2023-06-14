@@ -238,6 +238,15 @@ class User
         return $result;
     }
 
+    public static function getUserInfo($user_id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT * FROM user WHERE id = :user_id");
+        $statement->bindValue(":user_id", $user_id);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
 }
 
 
