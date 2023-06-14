@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php 
+
+include_once(__DIR__ . "/bootstrap.php");
+include_once(__DIR__ . "/LoginCheck.php");
+
+
+
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
