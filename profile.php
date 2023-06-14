@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php 
+
+include_once(__DIR__ . "/bootstrap.php");
+include_once(__DIR__ . "/LoginCheck.php");
+
+// get info from user whos logged in
+// $user = new User();
+// $gegevens = $user->getUserInfo($user_id);
+
+// var_dump($gegevens['locations_count']);
+
+
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,6 +25,9 @@
 </head>
 
 <body>
+   
+    <?php $gegevens = User::getUserInfo($user_id) ?>
+    <!-- <?php var_dump($gegevens['locations_count']) ?> -->
     <div class="logo">
         <div id="logo_zwart"></div>
     </div>
@@ -20,7 +35,7 @@
         <div class="flex flex-col justify-center items-center mt-5">
             <h1>account</h1>
             <div class="rounded">
-                <img src="img/profile.jpg" alt="" class="rounded-full w-40 h-40 object-cover">
+                <img src="img/profileicon.png" alt="foto" class="rounded-full w-40 h-40 object-cover">
                 <span class="circle"></span>
             </div>
         </div>
@@ -32,29 +47,31 @@
             <div class="box-container">
                 <div class="box">
                     <div class="links">
-                        <h3>Voornaam</h3>
-                        <p>Mauro</p>
+                        <h3>naam</h3>
+                        <p><?php echo $_SESSION['username'] ?></p>
                     </div>
-                    <div class="rechts">
+                    <!-- <div class="rechts">
                         <h3>Achternaam</h3>
                         <p>Van der Flaes</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="links">
-                        <h3>Telefoonnummer</h3>
-                        <p>0478 12 34 56</p>
-                    </div>
-                    <div class="rechts">
-                        <h3>Wachtwoord</h3>
-                        <p>**********</p>
-                    </div>
-                </div>
-                <div class="box">
+                    </div> -->
                     <div class="links">
                         <h3>Email</h3>
-                        <p>r0878182@student.thomasmore.be</p>
+                        <p><?php echo $_SESSION['email'];  ?></p>
                     </div>
+                </div>
+                <div class="box">
+                    <!-- <div class="links">
+                        <h3>Telefoonnummer</h3>
+                        <p>0478 12 34 56</p>
+                    </div> -->
+                    <!-- <div class="rechts">
+                        <h3>Wachtwoord</h3>
+                        <p type="password">dsfds</p>
+                        
+                    </div> -->
+                </div>
+                <div class="box">
+                    
                 </div>
             </div>
         </div>
@@ -87,11 +104,16 @@
                     <div class="links">
                         <h3>aantal parkeersessies</h3>
                         <p>000</p>
+
+                        <h3>aantal toegevoegde locaties</h3>
+                            <p><?php echo $gegevens['locations_count'] ?></p>
+
                     </div>
                     <div class="rechts">
                         <h3>totale tijd</h3>
                         <p>00u 00m 00s</p>
                     </div>
+
                 </div>
 
             </div>
