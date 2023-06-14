@@ -49,7 +49,9 @@ $getLocation = $user->getLocationInfo();
 
   <div id="normalNav">
 
-    <div id="logo"><img src="img/logo.png" alt=""></div>
+  <div class="logo">
+        <div id="logo"></div>
+    </div>
 
     <div id="boxSearch">
       <a href=""><img src="img/search.png" alt=""></a>

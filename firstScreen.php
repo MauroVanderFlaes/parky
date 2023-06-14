@@ -30,7 +30,7 @@
             <div class="btns">
                 <a href="login.php" class="btn">login</a>
                 <p>of</p>
-                <a href="register.php" class="btn">register</a>
+                <a href="registreer.php" class="btn">register</a>
             </div>
 
         </div>
