@@ -59,20 +59,27 @@
 }
 
 @media screen and (min-width: 600px) {
+    body {
+        padding: 0;
+    }
     .log {
         background-image: url(../img/bg-desktop.png);
         background-position: center;
-        margin-top: 17vh;
+        margin-top: 8vh;
         background-size: cover;
     }
 
     .inputBox {
         display: flex;
+        margin: 0;
     }
 
     .btns a {
-        padding: 2% 0%;
+        padding: 1.5% 0%;
         width: 30%;
+    }
+    .btns {
+        padding: 0;
     }
 }
 
