@@ -314,7 +314,7 @@ $calendarMarkup = generateCalendar($month, $year);
 </div>
     
 
-    <?php include 'nav.php'; ?>
+    <?php include 'nav2.php'; ?>
 
     <script>
 

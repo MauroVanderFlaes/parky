@@ -93,7 +93,7 @@ $info = $user->getInfo($user_id);
     </div>
 
 
-    <?php include 'nav.php'; ?>
+    <?php include 'nav2.php'; ?>
 
 </body>
 

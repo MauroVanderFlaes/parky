@@ -128,7 +128,7 @@ include_once(__DIR__ . "/LoginCheck.php");
         </div>
     </div>
 
-    <?php include_once('nav.php'); ?>
+    <?php include_once('nav3.php'); ?>
 </body>
 
 </html>

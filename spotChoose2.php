@@ -49,7 +49,7 @@ include_once(__DIR__ . "/LoginCheck.php");
             </div>
 
 
-            <?php include 'nav.php'; ?>
+            <?php include 'nav2.php'; ?>
 
 </body>
 <script src="script.js"></script>

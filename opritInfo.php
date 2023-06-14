@@ -327,7 +327,7 @@ $nextYear = ($month + 1) > 12 ? ($year + 1) : $year;
     </div>
   
 
-    <?php include 'nav.php'; ?>
+    <?php include 'nav2.php'; ?>
 
 
     <script>

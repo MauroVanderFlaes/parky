@@ -815,6 +815,34 @@ p {
     justify-content: center;
 }
 
+.boxImgParking {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+    z-index: -5;
+}
+
+
+
+.boxImgParking img {
+
+    width: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+.balk{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+
+}
 
 .oprit2 h1 {
     font-family: lettertype;

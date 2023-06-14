@@ -62,7 +62,7 @@ if($amountUser->getLocationCount($_SESSION['user_id']) >= 1){
             ?>
         </div>
     </div>
-    <?php include_once('nav.php') ;?>
+    <?php include_once('nav2.php') ;?>
     <!-- <script src="script.js"></script> -->
 </body>
 
