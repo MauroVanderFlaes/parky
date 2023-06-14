@@ -205,6 +205,29 @@ class User
     }
 
 
+    public function getInfo($user_Id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT * FROM locations WHERE user_id = :user_id");
+        $statement->bindValue(":user_id", $user_Id);
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function deleteOprit($user_id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("DELETE FROM locations WHERE user_id = :user_id");
+        $statement->bindValue(":user_id", $user_id);
+        $statement->execute();
+    }
+
+    public function removeLocation($user_id){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("UPDATE user SET locations_count = locations_count - 1 WHERE id = :user_id");
+        $statement->bindValue(":user_id", $user_id);
+        $statement->execute();
+    }
+
 }
 
 
