@@ -226,6 +226,16 @@ class User
         $statement = $conn->prepare("UPDATE user SET locations_count = locations_count - 1 WHERE id = :user_id");
         $statement->bindValue(":user_id", $user_id);
         $statement->execute();
+
+    }
+
+//make function that gets locations that user has added whos logged in
+    public function getLocationInfo(){
+        $conn = Db::getInstance();
+        $statement = $conn->prepare("SELECT * FROM locations");
+        $statement->execute();
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
     }
 
 }
